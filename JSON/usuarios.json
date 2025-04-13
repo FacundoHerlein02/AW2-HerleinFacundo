@@ -1,0 +1,62 @@
+[
+    {
+        "Nombre":"Facundo",
+        "Apellido":"Herlein",
+        "Usuario":"facu57",
+        "Contraseña":"facu123"
+    },
+    {
+        "Nombre": "Lucía",
+        "Apellido": "Martínez",
+        "Usuario": "luci89",
+        "Contraseña": "luci123"
+    },
+    {
+        "Nombre": "Juan",
+        "Apellido": "Gómez",
+        "Usuario": "juanito22",
+        "Contraseña": "juan123"
+    },
+    {
+        "Nombre": "Camila",
+        "Apellido": "Pérez",
+        "Usuario": "cami09",
+        "Contraseña": "cami123"
+    },
+    {
+        "Nombre": "Mateo",
+        "Apellido": "López",
+        "Usuario": "matex34",
+        "Contraseña": "mate123"
+    },
+    {
+        "Nombre": "Valentina",
+        "Apellido": "Sánchez",
+        "Usuario": "valen77",
+        "Contraseña": "valen123"
+    },
+    {
+        "Nombre": "Tomás",
+        "Apellido": "Rodríguez",
+        "Usuario": "tomy56",
+        "Contraseña": "tomy123"
+    },
+    {
+        "Nombre": "Sofía",
+        "Apellido": "García",
+        "Usuario": "sofi03",
+        "Contraseña": "sofi123"
+    },
+    {
+        "Nombre": "Agustín",
+        "Apellido": "Fernández",
+        "Usuario": "agus91",
+        "Contraseña": "agus123"
+    },
+    {
+        "Nombre": "Martina",
+        "Apellido": "Ruiz",
+        "Usuario": "martu88",
+        "Contraseña": "martu123"
+    }
+]
