@@ -59,9 +59,10 @@ const get_detalleVenta=(id) =>{
         return {
             marca: prod.marca,
             descripcion: prod.descripcion,
-            cantidad: e.cantidad                
+            cantidad: e.cantidad                         
         };
     });
+    let total = venta.productos.reduce((sum, p) => sum + p.subtotal, 0);
     let cliente = usuarios.find(u => u.id_cliente == venta.id_cliente);
     let filtro_cliente = {
         nombre: cliente.Nombre, 
@@ -70,7 +71,8 @@ const get_detalleVenta=(id) =>{
     return {
         fecha: venta.fecha,
         cliente: filtro_cliente,
-        productos: filtro_producto
+        productos: filtro_producto,
+        Total: total
     };   
 }
 console.log("DETALLE DE VENTAA")
