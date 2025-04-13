@@ -1,0 +1,24 @@
+{
+  "name": "aw2-herleinfacundo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "Type":"module", 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FacundoHerlein02/AW2-HerleinFacundo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FacundoHerlein02/AW2-HerleinFacundo/issues"
+  },
+  "homepage": "https://github.com/FacundoHerlein02/AW2-HerleinFacundo#readme",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
