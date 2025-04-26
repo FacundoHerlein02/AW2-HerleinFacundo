@@ -1,72 +1,100 @@
 [
-    {
-        "id_cliente":1,
-        "Nombre":"Facundo",
-        "Apellido":"Herlein",
-        "Usuario":"facu57",
-        "Contraseña":"facu123"
-    },
-    {
-        "id_cliente":2,
-        "Nombre": "Lucía",
-        "Apellido": "Martínez",
-        "Usuario": "luci89",
-        "Contraseña": "luci123"
-    },
-    {
-        "id_cliente":3,
-        "Nombre": "Juan",
-        "Apellido": "Gómez",
-        "Usuario": "juanito22",
-        "Contraseña": "juan123"
-    },
-    {
-        "id_cliente":4,
-        "Nombre": "Camila",
-        "Apellido": "Pérez",
-        "Usuario": "cami09",
-        "Contraseña": "cami123"
-    },
-    {
-        "id_cliente":5,
-        "Nombre": "Mateo",
-        "Apellido": "López",
-        "Usuario": "matex34",
-        "Contraseña": "mate123"
-    },
-    {
-        "id_cliente":6,
-        "Nombre": "Valentina",
-        "Apellido": "Sánchez",
-        "Usuario": "valen77",
-        "Contraseña": "valen123"
-    },
-    {
-        "id_cliente":7,
-        "Nombre": "Tomás",
-        "Apellido": "Rodríguez",
-        "Usuario": "tomy56",
-        "Contraseña": "tomy123"
-    },
-    {
-        "id_cliente":8,
-        "Nombre": "Sofía",
-        "Apellido": "García",
-        "Usuario": "sofi03",
-        "Contraseña": "sofi123"
-    },
-    {
-        "id_cliente":9,
-        "Nombre": "Agustín",
-        "Apellido": "Fernández",
-        "Usuario": "agus91",
-        "Contraseña": "agus123"
-    },
-    {
-        "id_cliente":10,
-        "Nombre": "Martina",
-        "Apellido": "Ruiz",
-        "Usuario": "martu88",
-        "Contraseña": "martu123"
-    }
+  {
+    "id_cliente": 1,
+    "Nombre": "Facundo",
+    "Apellido": "Herlein",
+    "Usuario": "facu57",
+    "Contraseña": "facu123"
+  },
+  {
+    "id_cliente": 2,
+    "Nombre": "Lucía",
+    "Apellido": "Martínez",
+    "Usuario": "luci89",
+    "Contraseña": "luci123"
+  },
+  {
+    "id_cliente": 3,
+    "Nombre": "Juan",
+    "Apellido": "Gómez",
+    "Usuario": "juanito22",
+    "Contraseña": "juan123"
+  },
+  {
+    "id_cliente": 4,
+    "Nombre": "Camila",
+    "Apellido": "Pérez",
+    "Usuario": "cami09",
+    "Contraseña": "cami123"
+  },
+  {
+    "id_cliente": 5,
+    "Nombre": "Mateo",
+    "Apellido": "López",
+    "Usuario": "matex34",
+    "Contraseña": "mate123"
+  },
+  {
+    "id_cliente": 6,
+    "Nombre": "Valentina",
+    "Apellido": "Sánchez",
+    "Usuario": "valen77",
+    "Contraseña": "valen123"
+  },
+  {
+    "id_cliente": 7,
+    "Nombre": "Tomás",
+    "Apellido": "Rodríguez",
+    "Usuario": "tomy56",
+    "Contraseña": "tomy123"
+  },
+  {
+    "id_cliente": 8,
+    "Nombre": "Sofía",
+    "Apellido": "García",
+    "Usuario": "sofi03",
+    "Contraseña": "sofi123"
+  },
+  {
+    "id_cliente": 9,
+    "Nombre": "Agustín",
+    "Apellido": "Fernández",
+    "Usuario": "agus91",
+    "Contraseña": "agus123"
+  },
+  {
+    "id_cliente": 10,
+    "Nombre": "Martina",
+    "Apellido": "Ruiz",
+    "Usuario": "martu88",
+    "Contraseña": "martu123"
+  },
+  {
+    "id_cliente": 11,
+    "Nombre": "prueba",
+    "Apellido": "Apellidoprueba",
+    "Usuario": "user123",
+    "Contraseña": "clave123"
+  },
+  {
+    "id_cliente": 12,
+    "Nombre": "facuu",
+    "Apellido": "H",
+    "Usuario": "facuEncriptado",
+    "Contraseña": "$2b$10$X2wbQ8dtdzpkehepQpjRwucciaHYLFrBC0sCv1EoZ.X2oJoNC5JCu"
+  },
+  {
+    "id_cliente": 13,
+    "Nombre": "facuu",
+    "Apellido": "Her",
+    "Usuario": "facuEncrip23",
+    "Contraseña": "$2b$10$tLlsdfkkcPPU1ODWCyqs9.BXivA04qBZJYI5D.S2V6BZG1.KlroRq"
+  },
+  {
+    "id_cliente": 14,
+    "Nombre": "Facu",
+    "Apellido": "Perez",
+    "Usuario": "XxPerezxX",
+    "Contraseña": "$2b$10$6jW5L4bof/eIpD4Vo5WU/ePSWIkgAy3EbVvtR6/DPVB0sUMRucj6m"
+  }
 ]
