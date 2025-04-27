@@ -95,6 +95,20 @@
     "Nombre": "Facu",
     "Apellido": "Perez",
     "Usuario": "XxPerezxX",
-    "Contraseña": "$2b$10$6jW5L4bof/eIpD4Vo5WU/ePSWIkgAy3EbVvtR6/DPVB0sUMRucj6m"
+    "Contraseña": "$2b$10$Ia.YScdXxdyQuAdfx1ocaOWz1I2fNX0exNZz2DeT7NTDJyhCu0HMq"
+  },
+  {
+    "id_cliente": 15,
+    "Nombre": "prueba18",
+    "Apellido": "prueba18",
+    "Usuario": "prueba18",
+    "Contraseña": "$2b$10$CYfY45Q9f4wzNI6KKbQez.K8uP4U6VdMr6p523IMVgNzoYMENdDZ6"
+  },
+  {
+    "id_cliente": 16,
+    "Nombre": "prueBAS",
+    "Apellido": "prueBAS",
+    "Usuario": "prueBAS",
+    "Contraseña": "$2b$10$5e93VQ6qAI3GLOTRAKgsqe8rni.ah5qAx4OFJ/1899Ll1nqQfO5f2"
   }
 ]

@@ -1,39 +1,317 @@
 import  { Router } from 'express';
-import { readFile, writeFile} from 'fs/promises';
-const ventasJson = await readFile('./JSON/ventas.json', 'utf-8');
-const ventas= JSON.parse(ventasJson);
+//Utils Ventas
+import {getVentaByid,getUltId,cargarVentas,getVentas,agregarVenta,actualizarVenta} from '../utils/utilsVentas.js';
+//Utils Productos
+import {getProdByid,updateStockMem,UpdateStock,cargarProductos} from '../utils/utilsProductos.js';
+//Utils Usuarios
+import {getUserByid,cargarUsuarios} from '../utils/utilsUsuarios.js';
 const router= Router();
-
 // /ventas
-router.get('/hola', (req,res)=>{
-    res.status(200).json("Hola");
-})
-//Muestra detalle de venta y todos los datos
-/*const get_detalleVenta=(id) =>{
-    let venta= ventas.find(e => e.id_venta == id);    
-    let filtro_producto= venta.productos.map(e =>
-    { 
-        let prod= productos.find(p=> p.id_producto == e.id_producto);
-        return {
-            marca: prod.marca,
-            descripcion: prod.descripcion,
-            cantidad: e.cantidad                         
-        };
-    });
-    let total = venta.productos.reduce((sum, p) => sum + p.subtotal, 0);
-    let cliente = usuarios.find(u => u.id_cliente == venta.id_cliente);
-    let filtro_cliente = {
-        nombre: cliente.Nombre, 
-        apellido: cliente.Apellido 
-    };
-    return {
-        fecha: venta.fecha,
-        cliente: filtro_cliente,
-        productos: filtro_producto,
-        Total: total
-    };   
-}
-console.log("DETALLE DE VENTAA")
-console.log(get_detalleVenta(2))*/
+
+//GET
+//Muestra detalle de las ventas
+router.get('/getAllVentas', async(req, res) => {
+    try {
+        //lee el json
+        await cargarVentas();
+        await cargarProductos();
+        await cargarUsuarios();
+        //Carga las ventas en la variable
+        let ventas= getVentas();
+        const result = [];
+        for (const e of ventas) {
+            let user;            
+            try {
+                user = getUserByid(e.id_cliente);                
+            } catch (error) {
+                return res.status(400).json({ error: error.message });
+            }
+            let productosDetalle;
+            try {
+                productosDetalle = e.productos.map(item => {
+                    const prod = getProdByid(item.id_producto);
+                    return {                        
+                        Marca: prod.marca,
+                        Descripcion: prod.descripcion,
+                        Cantidad: item.cantidad,
+                        Subtotal:'$'+ item.subtotal
+                    };
+                });
+            } catch (error) {
+                return res.status(400).json({ error: error.message });
+            }
+
+            result.push({
+                Fecha: e.fecha,
+                Cliente: user.Nombre + ' ' + user.Apellido,
+                Productos: productosDetalle,
+                Total:'$'+ e.total
+            });
+        }
+
+        if (result.length > 0) {
+            res.status(200).json(result);
+        } else {
+            res.status(404).json(`No se encontraron ventas.`);
+        }
+    } catch (error) {
+        res.status(500).json({ error: "Error del servidor." });
+    }
+});
+//Muestra detalle de venta por Id
+router.get('/ventaByid/:id',async(req,res)=>{
+    try 
+    {
+        //lee el json
+        await cargarVentas();
+        await cargarProductos();
+        await cargarUsuarios();            
+        const id= Number(req.params.id);
+        let result={};
+        let venta =''        
+        try
+        {
+            venta = getVentaByid(id)
+        }
+        catch(error)
+        {
+            return res.status(400).json({ error: error.message });
+        }       
+        if (venta) 
+        {
+            let user;
+            //Obtiene el usuario            
+            try 
+            {
+                user = getUserByid(venta.id_cliente);                
+            } catch (error) 
+            {
+                return res.status(400).json({ error: error.message });
+            } 
+            let productosDetalle;
+            try 
+            {
+                productosDetalle = venta.productos.map(item => {
+                const prod = getProdByid(item.id_producto);
+                return {                        
+                    Marca: prod.marca,
+                    Descripcion: prod.descripcion,
+                    Cantidad: item.cantidad,
+                    Subtotal:'$'+ item.subtotal
+                };
+            });
+            } catch (error) {
+                return res.status(400).json({ error: error.message });
+            }
+
+            result={
+                Fecha: venta.fecha,
+                Cliente: user.Nombre + ' ' + user.Apellido,
+                Productos: productosDetalle,
+                Total:'$'+ venta.total
+            }
+                       
+            res.status(200).json(result);
+        } else {
+            res.status(404).json(`No se encontraron ventas.`);
+        }
+    } 
+    catch (error) 
+    {
+        res.status(500).json({error:"Error del servidor."});
+    }
+});
+
+//POST
+
+//Crea ventas
+router.post('/newVenta',async(req,res)=>{
+    try 
+    {        
+        //lee el json
+        await cargarVentas();
+        await cargarProductos();
+        await cargarUsuarios(); 
+        const{fecha,idCli,prods}= req.body
+        if(!fecha||!idCli||!Array.isArray(prods) || prods.length === 0)
+        {
+            return res.status(401).json("Faltan completar campos");
+        }        
+        else
+        {
+            //Valida que exista el usuario
+            try 
+            {
+                getUserByid(idCli);
+            } catch (error) 
+            {
+                return res.status(404).json(error.message);
+            }    
+            const productosVenta = [];            
+            let total = 0;
+
+            for (const item of prods) {
+                const { idProd, cantidad } = item;
+
+                if (!idProd || !cantidad || cantidad <= 0) {
+                    return res.status(400).json("Producto o cantidad inválidos");
+                }    
+
+                const producto = getProdByid(idProd); 
+                   
+                if (!producto) {
+                    return res.status(404).json(`Producto con id ${idProd} no encontrado`);
+                }
+                
+                //Actualiza el stock en memoria
+                const cantidadNegativa = cantidad * -1;              
+                try {
+                updateStockMem(idProd, cantidadNegativa);
+                } catch (error) {
+                    return res.status(400).json(error.message);
+                }                
+                
+                let subtotal = Math.round(producto.precio * cantidad * 100) / 100; 
+                
+                productosVenta.push({
+                    id_producto: idProd,
+                    cantidad,
+                    subtotal
+                });    
+
+                total += subtotal;
+            }           
+            // Una vez validado el stock, graba permanente
+            UpdateStock();
+
+            //Redondea
+            total = Math.round(total * 100) / 100;
+            
+            const NewVenta = {
+                id_venta: getUltId(),
+                fecha:fecha,
+                id_cliente: idCli,
+                productos: productosVenta,
+                total
+            };
+            await agregarVenta(NewVenta);                    
+            res.status(201).json(NewVenta);            
+        }
+
+    } catch (error) 
+    {
+        res.status(500).json({error:"Error del servidor."});
+    }
+});
+
+//PUT
+router.put('/updateVenta',async(req,res)=>{
+    //lee el json
+    await cargarVentas();
+    await cargarProductos();
+    await cargarUsuarios();     
+    const{id,fecha,prods,idCli}= req.body;
+    let venta;
+    if(!id||!fecha||!Array.isArray(prods) || prods.length === 0 ||!idCli)
+    {
+        return res.status(401).json("Faltan completar campos");
+    }
+    try {
+        try 
+        {
+            //Obtiene la venta
+            venta =getVentaByid(id);  
+        } 
+        catch (error) 
+        {
+            return res.status(404).json(error.message);
+        }
+        //Valida si existe el cliente
+        try {
+            getUserByid(idCli);
+        } catch (error) {
+            return res.status(404).json(`Cliente con id ${idCli} no encontrado`);
+        }
+        //Mapa con productos Originales de la venta
+        const originalProductosMap = new Map();
+        //Guarda los productos y cantidades de la venta
+        for (const p of venta.productos) 
+        {
+            originalProductosMap.set(p.id_producto, p.cantidad);
+        }
+        //Si la venta existe
+        if(venta)
+        {
+            const productosVenta = [];            
+            let Total = 0;
+            //Recorre el arreglo de productos
+            for(const item of prods)
+            {
+                const { idProd, cantidad } = item;
+                if (!idProd || !cantidad || cantidad <= 0) {
+                    return res.status(400).json("Producto o cantidad inválidos");
+                }
+                //Valida si existe el producto  
+                const producto = getProdByid(idProd);                 
+                if (!producto) {
+                    return res.status(404).json(`Producto con id ${idProd} no encontrado`);
+                }
+                // Cantidad original vendida (si existe)
+                const cantidadOriginal = originalProductosMap.get(idProd) || 0;
+
+                if (cantidadOriginal !== cantidad) {
+                    //actualizamos stock según la diferencia
+                    const diferencia = cantidadOriginal - cantidad;
+                    try {
+                        updateStockMem(idProd, diferencia);
+                    } catch (error) {
+                        return res.status(400).json(error.message);
+                    }
+                }
+                // Eliminamos del mapa para luego saber qué productos fueron removidos
+                originalProductosMap.delete(idProd);                
+
+                let subtotal = Math.round(producto.precio * cantidad * 100) / 100; 
+                
+                productosVenta.push({
+                    id_producto: idProd,
+                    cantidad,
+                    subtotal
+                });    
+
+                Total += subtotal;
+            }
+
+            // Los productos que quedaron en originalProductosMap fueron removidos de la venta
+            for (const [idProdRemovido, cantidadRemovida] of originalProductosMap.entries()) {
+                try {
+                    // Sumamos la cantidad removida al stock
+                    updateStockMem(idProdRemovido, cantidadRemovida);
+                } catch (error) {
+                    return res.status(400).json(error.message);
+                }
+            }
+            // Una vez validado el stock, graba permanente
+            UpdateStock();
+
+            Total = Math.round(Total * 100) / 100;
+            venta.fecha=fecha
+            venta.id_cliente=idCli
+            venta.productos=productosVenta
+            venta.total=Total
+            await actualizarVenta(venta);                    
+            res.status(200).json("Venta actualizada correctamente")            
+        }
+        else
+        {
+            return res.status(404).json("Venta no encontrada");
+        }
+    } catch (error) {
+        res.status(500).json({error:"Error del servidor."});
+    }
+    
+});
+
+//DELETE
 
 export default router

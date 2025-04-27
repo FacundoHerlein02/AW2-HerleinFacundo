@@ -1,17 +1,18 @@
 import { Router } from 'express';
-import { readFile, writeFile } from 'fs/promises';
-import {getUltId} from '../utils/utilsUsuarios.js';
+import {getUltId,cargarUsuarios,getUsuarios,agregarUsuario,actualizarUsuario} from '../utils/utilsUsuarios.js';
 import bcrypt from 'bcrypt';
-const usersJson = await readFile('./JSON/usuarios.json', 'utf-8');
-const users= JSON.parse(usersJson);
 const router= Router();
 
 // /usuarios
 // GET
 //Obtiene todos los usuarios
-router.get('/allUsers',(req,res)=>{    
+router.get('/allUsers',async (req,res)=>{    
     try
     {
+        //Lee el Json
+        await cargarUsuarios();
+        //Carga los usuarios
+        let users=getUsuarios();
         const result= users.map(e=>{
             return{
                 Id: e.id_cliente,
@@ -35,7 +36,11 @@ router.get('/allUsers',(req,res)=>{
     }
 });
 //Obtiene usuarios por id
-router.get('/userById/:id',(req,res)=>{
+router.get('/userById/:id',async(req,res)=>{
+    //Lee el Json
+    await cargarUsuarios();
+    //Carga los usuarios
+    let users=getUsuarios();
     const id= req.params.id
     const result= users.find(e=>e.id_cliente==id);    
     try
@@ -61,6 +66,10 @@ router.get('/userById/:id',(req,res)=>{
 router.post('/newUser',async(req,res)=>{
     try
     {
+        //Lee el Json
+        await cargarUsuarios();
+        //Carga los usuarios
+        let users=getUsuarios();
         const id = getUltId();
         //Obtiene los datos del body
         const nombre=req.body.nombre
@@ -90,9 +99,7 @@ router.post('/newUser',async(req,res)=>{
                 Contraseña: hashedPassword //Guarda la clave encriptada
             };
             // Agregar a la lista
-            users.push(newUser);
-            // Guardar de nuevo en archivo JSON
-            await writeFile('./JSON/usuarios.json', JSON.stringify(users, null, 2));
+            await agregarUsuario(newUser);            
             // Responder con el nuevo usuario
             res.status(201).json(newUser);
         }        
@@ -105,6 +112,10 @@ router.post('/newUser',async(req,res)=>{
 //Loguin
 router.post('/login',async (req,res)=>{
     try{
+        //Lee el Json
+        await cargarUsuarios();
+        //Carga los usuarios
+        let users=getUsuarios();
         const {usuario,clave} = req.body;
         if(!usuario || !clave)
         {
@@ -137,6 +148,10 @@ router.post('/login',async (req,res)=>{
 router.put('/updateClave',async(req,res)=>{
     try
     {
+        //Lee el Json
+        await cargarUsuarios();
+        //Carga los usuarios
+        let users=getUsuarios();
         const paramUsuario= req.body.usuario;
         const claveVieja= req.body.claveOld;
         const claveNueva= req.body.claveNew;        
@@ -157,12 +172,11 @@ router.put('/updateClave',async(req,res)=>{
             if(!match)
             {
                 return res.status(401).json("Contraseña anterior incorrecta");                
-            }
-            const index = users.findIndex(e => e.Usuario == paramUsuario);
+            }            
             // Encripta la clave
             const hashedPassword = await bcrypt.hash(claveNueva, 10);
-            users[index].Contraseña=hashedPassword
-            await writeFile('./JSON/usuarios.json',JSON.stringify(users,null,2))
+            user.Contraseña=hashedPassword
+            await actualizarUsuario(user);           
             res.status(200).json("Clave actualizaca correctamente") 
         }       
     }
@@ -175,6 +189,10 @@ router.put('/updateClave',async(req,res)=>{
 router.put('/updateUser',async (req,res)=>{
     try
     {
+        //Lee el Json
+        await cargarUsuarios();
+        //Carga los usuarios
+        let users=getUsuarios();
         const {nombre,apellido,usuario,usuarioNew} = req.body;        
         if(!nombre ||!apellido ||!usuario ||!usuarioNew)
         {
@@ -182,12 +200,11 @@ router.put('/updateUser',async (req,res)=>{
         }
         const user= users.find(u=>u.Usuario== usuario);
         if(user)
-        {
-            const index= users.findIndex(u => u.Usuario==usuario)
-            users[index].Nombre=nombre
-            users[index].Apellido=apellido
-            users[index].Usuario=usuarioNew
-            await writeFile('./JSON/usuarios.json',JSON.stringify(users,null,2))
+        {                     
+            user.Nombre=nombre
+            user.Apellido=apellido
+            user.Usuario=usuarioNew
+            await actualizarUsuario(user);
             res.status(200).json("Usuario actualizado correctamente");            
         }
         else
