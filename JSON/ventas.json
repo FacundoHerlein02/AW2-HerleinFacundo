@@ -453,18 +453,5 @@
       }
     ],
     "total": 78506.01
-  },
-  {
-    "id_venta": 24,
-    "fecha": "27/04/2025",
-    "id_cliente": 16,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 23220.34
-      }
-    ],
-    "total": 23220.34
   }
 ]

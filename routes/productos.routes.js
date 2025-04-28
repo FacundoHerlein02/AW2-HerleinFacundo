@@ -1,5 +1,8 @@
 import { Router } from 'express';
+//Utils Productos
 import {getProdByid,getUltId,cargarProductos,getProductos,agregarProducto,actualizarProducto,actualizaProductos} from '../utils/utilsProductos.js';
+//Utils Ventas
+import { cargarVentas,getVentas,actualizaVentas} from '../utils/utilsVentas.js';
 const router= Router();
 
 // /productos
@@ -12,7 +15,7 @@ router.get('/allProductos',async(req,res)=>{
         //lee el json
         await cargarProductos();
         //Carga los productos en una variable
-        let productos=getProductos()
+        let productos=getProductos();
         const result= productos.map(e=>{
             return{
                 Marca: e.marca,
@@ -22,7 +25,7 @@ router.get('/allProductos',async(req,res)=>{
                 Imagen: e.img,
                 Imagenes: e.imagenes                        
             }
-        })
+        });
         if(result && result.length>0)
         {
             res.status(200).json(result);
@@ -45,7 +48,7 @@ router.get('/motosMarca/:marca',async(req,res)=>{
         //lee el json
         await cargarProductos();
         //Carga los productos en una variable
-        let productos=getProductos()
+        let productos=getProductos();
         const marca= req.params.marca;
         const motosFiltradas=productos.filter(e =>e.marca == marca); //Filtra por marca      
         const result= motosFiltradas.map(e=>{
@@ -75,7 +78,7 @@ router.get('/filtroPrecio/:min/:max',async(req,res)=>{
         //lee el json
         await cargarProductos();
         //Carga los productos en una variable
-        let productos=getProductos()
+        let productos=getProductos();
         const min= req.params.min;
         const max= req.params.max;
         const motosFiltradas=productos.filter(e =>e.precio>=min &&e.precio<=max ); //Filtra por marca      
@@ -249,7 +252,7 @@ router.put('/updatePrecio',async(req,res)=>{
                 precioNuevo = Math.round((bike.precio + (bike.precio * (porcentaje / 100))) * 100) / 100;                                                  
                 bike.precio=precioNuevo;
             });
-            await actualizaProductos(productos);
+            await actualizaProductos(productos);            
             res.status(200).json("Precios actualizados correctamente");
         }       
         
@@ -262,13 +265,29 @@ router.put('/updatePrecio',async(req,res)=>{
 
 //DELETE
 
-router.delete('/deleteMoto',async (req,res)=>{
+router.delete('/deleteMoto/:id',async (req,res)=>{
     try 
     {
-        
+        const id= req.params.id;
+        //lee el json
+        await cargarProductos();
+        await cargarVentas();
+        let productos= getProductos();
+        let ventas = getVentas();
+        // Elimina las ventas relacionadas a esa moto        
+        ventas = ventas.filter(
+            v =>!v.productos.some(p => p.id_producto === Number(id))
+        );       
+        //Elimina la moto
+        productos=productos.filter(p=>p.id_producto !==Number(id));
+        //Graba las ventas ya filtradas
+        await actualizaVentas(ventas);
+        await actualizaProductos(productos);
+        res.status(200).json({ mensaje: "Moto eliminada correctamente" });
     } 
     catch (error) 
     {
+        console.error("Error eliminando moto:", error);
         res.status(500).json({ error: "Error del servidor" });
     }
 });

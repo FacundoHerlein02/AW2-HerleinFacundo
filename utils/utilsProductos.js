@@ -49,14 +49,6 @@ export const getProdByid=(id)=>{
         return prod
     }    
 };
-//Actualizar stock en MEMORIA!!!
-// export const updateStockMem = (id, cant) => {
-//     const prod = productos.find(p => p.id_producto == id);
-//     if (!prod) throw new Error(`Producto con id ${id} no encontrado`);
-//     const stock = prod.stock - cant;
-//     if (stock < 0) throw new Error(`Stock insuficiente para el producto id ${id}`);
-//     prod.stock = stock;    
-// };
 export const updateStockMem = (id, cant) => {
     const prod = productos.find(p => p.id_producto == id);
     if (!prod) throw new Error(`Producto con id ${id} no encontrado`);

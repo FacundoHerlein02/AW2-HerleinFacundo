@@ -41,7 +41,7 @@ router.get('/userById/:id',async(req,res)=>{
     await cargarUsuarios();
     //Carga los usuarios
     let users=getUsuarios();
-    const id= req.params.id
+    const id= req.params.id;
     const result= users.find(e=>e.id_cliente==id);    
     try
     {
@@ -84,10 +84,10 @@ router.post('/newUser',async(req,res)=>{
         {
             // Valida si el usuario ya existe
             const existeUsuario = users.find(u => u.Usuario === usuario);
-            if (existeUsuario) {
-                return res.status(409).json({ error: "El nombre de usuario ya está en uso"
-            });
-        }
+            if (existeUsuario) 
+            {
+                return res.status(409).json({ error: "El nombre de usuario ya está en uso"});
+            }
             // Encriptar la contraseña antes de guardarla
             const hashedPassword = await bcrypt.hash(contraseña, 10);
             //Crea el nuevo usuario
@@ -219,16 +219,16 @@ router.put('/updateUser',async (req,res)=>{
 });
 //DELETE
 //Elimina un usuario
-router.delete('',(req,res)=>{
-    try
-    {
+// router.delete('',(req,res)=>{
+//     try
+//     {
         
-    }
-    catch(error)
-    {
+//     }
+//     catch(error)
+//     {
 
-    }
-});
+//     }
+// });
 
 export default router
 

@@ -30,6 +30,11 @@ export async function actualizarVenta(venta) {
     await writeFile('./JSON/ventas.json', JSON.stringify(ventas, null, 2));
 }
 
+//Actualiza ventas del Json
+export async function actualizaVentas(Ventas) {   
+    await writeFile('./JSON/ventas.json', JSON.stringify(Ventas, null, 2));
+}
+
 //Obtiene la ultima Id de Venta y suma 1
 export const  getUltId=()=> {           
     const maxId = Math.max(...ventas.map(v => v.id_venta));

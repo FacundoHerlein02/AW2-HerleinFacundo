@@ -1,8 +1,8 @@
 import  { Router } from 'express';
 //Utils Ventas
-import {getVentaByid,getUltId,cargarVentas,getVentas,agregarVenta,actualizarVenta} from '../utils/utilsVentas.js';
+import {getVentaByid,getUltId,cargarVentas,getVentas,agregarVenta,actualizarVenta,actualizaVentas} from '../utils/utilsVentas.js';
 //Utils Productos
-import {getProdByid,updateStockMem,UpdateStock,cargarProductos} from '../utils/utilsProductos.js';
+import {getProdByid,updateStockMem,UpdateStock,cargarProductos,getProductos,actualizaProductos} from '../utils/utilsProductos.js';
 //Utils Usuarios
 import {getUserByid,cargarUsuarios} from '../utils/utilsUsuarios.js';
 const router= Router();
@@ -71,7 +71,7 @@ router.get('/ventaByid/:id',async(req,res)=>{
         let venta =''        
         try
         {
-            venta = getVentaByid(id)
+            venta = getVentaByid(id);
         }
         catch(error)
         {
@@ -313,5 +313,40 @@ router.put('/updateVenta',async(req,res)=>{
 });
 
 //DELETE
+
+router.delete('/deleteVenta/:id',async(req,res)=>{
+    try 
+    {
+        const id = Number(req.params.id);
+        //Lee el Json
+        await cargarVentas();
+        await cargarProductos();
+        //Carga los Json
+        let ventas = getVentas();
+        let productos = getProductos();
+    
+        // Buscar la venta a eliminar
+        const ventaAEliminar = ventas.find(v => v.id_venta === Number(id));
+        if (!ventaAEliminar) {
+          return res.status(404).json({ error: "Venta no encontrada" });
+        }    
+        // Actualizar el stock
+        ventaAEliminar.productos.forEach(item => {
+          const prod = productos.find(p => p.id_producto === item.id_producto);
+          if (prod) {
+            prod.stock += item.cantidad;  // sumamos la cantidad
+          }
+        });    
+        //eliminar la venta por id
+        ventas = ventas.filter(v => v.id_venta !== Number(id));    
+        // Guardar los JSON
+        await actualizaVentas(ventas);
+        await actualizaProductos(productos);    
+        res.status(200).json({ mensaje: "Venta eliminada correctamente" });
+    } catch (error) {
+        console.error("Error eliminando moto:", error);
+        res.status(500).json({ error: "Error del servidor" });
+    }
+});
 
 export default router
