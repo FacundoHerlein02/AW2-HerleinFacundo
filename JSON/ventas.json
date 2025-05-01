@@ -163,24 +163,6 @@
     "productos": [
       {
         "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 17445.78
-      },
-      {
-        "id_producto": 2,
-        "cantidad": 1,
-        "subtotal": 17445.78
-      }
-    ],
-    "total": 34891.56
-  },
-  {
-    "id_venta": 10,
-    "fecha": "2025/04/27",
-    "id_cliente": 10,
-    "productos": [
-      {
-        "id_producto": 1,
         "cantidad": 4,
         "subtotal": 34891.56
       },
@@ -304,24 +286,6 @@
       }
     ],
     "total": 8722.89
-  },
-  {
-    "id_venta": 17,
-    "fecha": "2025/04/17",
-    "id_cliente": 2,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 17445.78
-      },
-      {
-        "id_producto": 2,
-        "cantidad": 2,
-        "subtotal": 34891.56
-      }
-    ],
-    "total": 52337.34
   },
   {
     "id_venta": 17,

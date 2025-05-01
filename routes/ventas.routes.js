@@ -210,7 +210,7 @@ router.put('/updateVenta',async(req,res)=>{
     await cargarVentas();
     await cargarProductos();
     await cargarUsuarios();     
-    const{id,fecha,prods,idCli}= req.body;
+    const{id,fecha,prods,idCli}= req.body;    
     let venta;
     if(!id||!fecha||!Array.isArray(prods) || prods.length === 0 ||!idCli)
     {
@@ -220,7 +220,7 @@ router.put('/updateVenta',async(req,res)=>{
         try 
         {
             //Obtiene la venta
-            venta =getVentaByid(id);  
+            venta =getVentaByid(Number(id));  
         } 
         catch (error) 
         {

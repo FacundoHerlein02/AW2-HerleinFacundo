@@ -42,7 +42,7 @@ export const  getUltId=()=> {
 };
 //Obtener ventas por id
 export const getVentaByid=(id)=>{      
-    const venta= ventas.find(v=>v.id_venta==id)
+    const venta= ventas.find(v=>v.id_venta===id)
     if (!venta) {
         throw new Error(`Venta con id ${id} no encontrada`);
     }
