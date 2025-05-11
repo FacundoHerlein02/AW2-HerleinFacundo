@@ -18,8 +18,9 @@ router.get('/allProductos',async(req,res)=>{
         let productos=getProductos();
         const result= productos.map(e=>{
             return{
+                id:e.id_producto,
                 Marca: e.marca,
-                Descripción: e.descripcion,
+                Descripcion: e.descripcion,
                 Precio:'$'+ e.precio,
                 Stock:e.stock,
                 Imagen: e.img,
@@ -28,11 +29,11 @@ router.get('/allProductos',async(req,res)=>{
         });
         if(result && result.length>0)
         {
-            res.status(200).json(result);
+            res.status(200).json({mensaje:'Todas las motos',result});
         }
         else
         {
-            res.status(404).json(`No se encontraron productos.`);
+            res.status(404).json({error: `No se encontraron productos.`});
         }
     }
     catch(error)
@@ -50,11 +51,17 @@ router.get('/motosMarca/:marca',async(req,res)=>{
         //Carga los productos en una variable
         let productos=getProductos();
         const marca= req.params.marca;
+        //Valida que exista la marca
+        const exist = productos.some(p => p.marca === marca);
+        if (!exist) {
+            return res.status(404).json({ mensaje: "La marca no existe" });
+        };
         const motosFiltradas=productos.filter(e =>e.marca == marca); //Filtra por marca      
         const result= motosFiltradas.map(e=>{
             return{
+                id:e.id_producto,
                 Marca: e.marca,
-                Descripción: e.descripcion,
+                Descripcion: e.descripcion,
                 Precio:'$'+ e.precio,
                 Stock:e.stock,
                 Imagen: e.img,
@@ -63,7 +70,7 @@ router.get('/motosMarca/:marca',async(req,res)=>{
         });
         if(result && result.length>0)
         {
-            res.status(200).json(result);
+            res.status(200).json({mensaje:`Productos de la marca ${result[0].Marca}`,result});
         }
     }
     catch(error)
@@ -71,7 +78,36 @@ router.get('/motosMarca/:marca',async(req,res)=>{
         res.status(500).json({ error: "Error del servidor" });
     }
 });
- //Todas las motos en un rango de precio
+router.get('/motosId/:id',async(req,res)=>{
+    try
+    {
+        //lee el json
+        await cargarProductos();
+        //Carga los productos en una variable
+        let productos=getProductos();
+        const id= Number(req.params.id);
+        //Busca la moto       
+        const moto = productos.find(p => p.id_producto === id);
+        if (!moto) {
+            return res.status(404).json({ mensaje: "El producto no existe" });
+        };              
+        const result={
+            id:moto.id_producto,
+            Marca: moto.marca,
+            Descripcion: moto.descripcion,
+            Precio:'$'+ moto.precio,
+            Stock:moto.stock,
+            Imagen: moto.img,
+            Imagenes: moto.imagenes                        
+        };       
+        res.status(200).json({mensaje:`Moto encontrada ${result.id}`,result});        
+    }
+    catch(error)
+    {
+        res.status(500).json({ error: "Error del servidor" });
+    }
+});
+//Todas las motos en un rango de precio
 router.get('/filtroPrecio/:min/:max',async(req,res)=>{
     try 
     {
@@ -268,16 +304,21 @@ router.put('/updatePrecio',async(req,res)=>{
 router.delete('/deleteMoto/:id',async (req,res)=>{
     try 
     {
-        const id= req.params.id;
+        const id= Number(req.params.id);
         //lee el json
         await cargarProductos();
         await cargarVentas();
         let productos= getProductos();
         let ventas = getVentas();
+        //Valida que exista la moto
+        const exist = productos.some(p => p.id_producto === id);
+        if (!exist) {
+            return res.status(404).json({ mensaje: "La moto que se intenta eliminar no existe" });
+        };
         // Elimina las ventas relacionadas a esa moto        
         ventas = ventas.filter(
             v =>!v.productos.some(p => p.id_producto === Number(id))
-        );       
+        );
         //Elimina la moto
         productos=productos.filter(p=>p.id_producto !==Number(id));
         //Graba las ventas ya filtradas

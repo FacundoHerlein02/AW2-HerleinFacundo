@@ -119,17 +119,23 @@ router.post('/login',async (req,res)=>{
         const {usuario,clave} = req.body;
         if(!usuario || !clave)
         {
-            res.status(404).json("Faltan completar campos");
+            res.status(404).json({ error: "Faltan completar campos" });
         }
-        const user = users.find(u => u.Usuario === usuario);
-        if (!user) {
+        const userfind = users.find(u => u.Usuario === usuario);
+        if (!userfind) {
             return res.status(401).json({ error: "Usuario o contraseña incorrectos" });
         }
         // Compara la contraseña que mandó el usuario con la encriptada
-        const match = await bcrypt.compare(clave, user.Contraseña);
+        const match = await bcrypt.compare(clave, userfind.Contraseña);
         if(match)
         {
-            res.status(200).json({ Mensaje: "Login exitoso", user });
+            const user={
+                id: userfind.id_cliente,
+                Nombre: userfind.Nombre,
+                Apellido: userfind.Apellido,
+                Usuario: userfind.Usuario                 
+            }           
+            res.status(200).json({ mensaje: "Login exitoso", user });
         }
         else
         {
@@ -217,18 +223,5 @@ router.put('/updateUser',async (req,res)=>{
         res.status(500).json({error:"Error del servidor."});
     }
 });
-//DELETE
-//Elimina un usuario
-// router.delete('',(req,res)=>{
-//     try
-//     {
-        
-//     }
-//     catch(error)
-//     {
-
-//     }
-// });
-
 export default router
 

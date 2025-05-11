@@ -110,5 +110,12 @@
     "Apellido": "prueBAS",
     "Usuario": "prueBAS",
     "Contraseña": "$2b$10$5e93VQ6qAI3GLOTRAKgsqe8rni.ah5qAx4OFJ/1899Ll1nqQfO5f2"
+  },
+  {
+    "id_cliente": 17,
+    "Nombre": "FacuPost",
+    "Apellido": "FacuPost",
+    "Usuario": "FacuPost",
+    "Contraseña": "$2b$10$qp.LxhjRAmPtiFqGhQ1.UeTSWFGYWgap0dsFdK8i6vADbwbI0/YaO"
   }
 ]

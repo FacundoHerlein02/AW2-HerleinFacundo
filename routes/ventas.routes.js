@@ -135,7 +135,7 @@ router.post('/newVenta',async(req,res)=>{
         const{fecha,idCli,prods}= req.body
         if(!fecha||!idCli||!Array.isArray(prods) || prods.length === 0)
         {
-            return res.status(401).json("Faltan completar campos");
+            return res.status(401).json({error:"Faltan completar campos"});
         }        
         else
         {
@@ -145,7 +145,7 @@ router.post('/newVenta',async(req,res)=>{
                 getUserByid(idCli);
             } catch (error) 
             {
-                return res.status(404).json(error.message);
+                return res.status(404).json({error: error.message});
             }    
             const productosVenta = [];            
             let total = 0;
@@ -154,13 +154,13 @@ router.post('/newVenta',async(req,res)=>{
                 const { idProd, cantidad } = item;
 
                 if (!idProd || !cantidad || cantidad <= 0) {
-                    return res.status(400).json("Producto o cantidad inválidos");
+                    return res.status(400).json({error: "Producto o cantidad inválidos"});
                 }    
 
                 const producto = getProdByid(idProd); 
                    
                 if (!producto) {
-                    return res.status(404).json(`Producto con id ${idProd} no encontrado`);
+                    return res.status(404).json({error: `Producto con id ${idProd} no encontrado`});
                 }
                 
                 //Actualiza el stock en memoria
@@ -168,7 +168,7 @@ router.post('/newVenta',async(req,res)=>{
                 try {
                 updateStockMem(idProd, cantidadNegativa);
                 } catch (error) {
-                    return res.status(400).json(error.message);
+                    return res.status(400).json({error: error.message});
                 }                
                 
                 let subtotal = Math.round(producto.precio * cantidad * 100) / 100; 
@@ -195,7 +195,7 @@ router.post('/newVenta',async(req,res)=>{
                 total
             };
             await agregarVenta(NewVenta);                    
-            res.status(201).json(NewVenta);            
+            res.status(201).json({mensaje: "Venta realizada con éxito",NewVenta});            
         }
 
     } catch (error) 
