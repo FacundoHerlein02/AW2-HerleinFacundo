@@ -194,7 +194,7 @@ router.post('/newVenta',async(req,res)=>{
                 productos: productosVenta,
                 total
             };
-            await agregarVenta(NewVenta);                    
+            await agregarVenta(NewVenta);                                
             res.status(201).json({mensaje: "Venta realizada con éxito",NewVenta});            
         }
 

@@ -4,7 +4,7 @@
     "marca": "Honda",
     "descripcion": "Honda xr150",
     "precio": 11610.17,
-    "stock": 10,
+    "stock": 7,
     "img": "https://motos.honda.com.ar/uploads/modelos/72/images/slid_productoers/416_0s-0slid_productoe-motos-xr150l-2025.jpg",
     "imagenes": [
       "https://motos.honda.com.ar/uploads/modelos/72/images/slid_productoers/418_0s-0img-web-xr150l-2025-motor.jpg",
@@ -17,7 +17,7 @@
     "marca": "Honda",
     "descripcion": "Honda xr300",
     "precio": 21109.4,
-    "stock": 10,
+    "stock": 8,
     "img": "https://motos.honda.com.ar/uploads/modelos/63/images/slid_productoers/346_0s-0370-0s-0img-web-tornado-2024-roja.jpg",
     "imagenes": [
       "https://motos.honda.com.ar/uploads/modelos/63/images/slid_productoers/347_0s-0371-0s-0img-web-tornado-2024-motor.jpg",
@@ -30,7 +30,7 @@
     "marca": "Honda",
     "descripcion": "Africa Twin",
     "precio": 31664.09,
-    "stock": 10,
+    "stock": 9,
     "img": "https://motos.honda.com.ar/uploads/modelos/51/images/slid_productoers/264_5s-5img-web-africa-adventure-diseno.jpg",
     "imagenes": [
       "https://motos.honda.com.ar/uploads/modelos/51/images/slid_productoers/265_0s-0img-web-africa-adventure-motor.jpg",
@@ -56,7 +56,7 @@
     "marca": "Corven",
     "descripcion": "Hunter 150r2",
     "precio": 5989.5,
-    "stock": 8,
+    "stock": 9,
     "img": "https://http2.mlstatic.com/D_NQ_NP_926038-MLA77114505866_062024-O.webp",
     "imagenes": [
       "https://http2.mlstatic.com/D_NQ_NP_750100-MLA77114496376_062024-O.webp",
@@ -69,7 +69,7 @@
     "marca": "Corven",
     "descripcion": "Corven Expert 80cc",
     "precio": 2395.8,
-    "stock": 4,
+    "stock": 3,
     "img": "https://http2.mlstatic.com/D_NQ_NP_779690-MLA43516432163_092020-O.webp",
     "imagenes": [
       "https://http2.mlstatic.com/D_NQ_NP_969188-MLA43516432157_092020-O.webp",
@@ -145,7 +145,7 @@
   {
     "id_producto": 12,
     "marca": "Motomel",
-    "descripcion":"Motomel Scooter 150",
+    "descripcion": "Motomel Scooter 150",
     "precio": 20364.3,
     "stock": 6,
     "img": "https://motomel.com.ar/wp-content/uploads/2024/03/stratoe-slid_productoer-negro.png",

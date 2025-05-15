@@ -417,5 +417,145 @@
       }
     ],
     "total": 78506.01
+  },
+  {
+    "id_venta": 24,
+    "fecha": "11/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      },
+      {
+        "id_producto": 2,
+        "cantidad": 1,
+        "subtotal": 21109.4
+      }
+    ],
+    "total": 32719.57
+  },
+  {
+    "id_venta": 25,
+    "fecha": "11/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      },
+      {
+        "id_producto": 2,
+        "cantidad": 1,
+        "subtotal": 21109.4
+      }
+    ],
+    "total": 32719.57
+  },
+  {
+    "id_venta": 26,
+    "fecha": "11/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 6,
+        "cantidad": 1,
+        "subtotal": 2395.8
+      }
+    ],
+    "total": 2395.8
+  },
+  {
+    "id_venta": 27,
+    "fecha": "11/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 3,
+        "cantidad": 1,
+        "subtotal": 31664.09
+      }
+    ],
+    "total": 31664.09
+  },
+  {
+    "id_venta": 28,
+    "fecha": "11/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 5,
+        "cantidad": 1,
+        "subtotal": 5989.5
+      }
+    ],
+    "total": 5989.5
+  },
+  {
+    "id_venta": 29,
+    "fecha": "11/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 5,
+        "cantidad": 1,
+        "subtotal": 5989.5
+      }
+    ],
+    "total": 5989.5
+  },
+  {
+    "id_venta": 30,
+    "fecha": "11/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 5,
+        "cantidad": 1,
+        "subtotal": 5989.5
+      }
+    ],
+    "total": 5989.5
+  },
+  {
+    "id_venta": 31,
+    "fecha": "11/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 5,
+        "cantidad": 1,
+        "subtotal": 5989.5
+      }
+    ],
+    "total": 5989.5
+  },
+  {
+    "id_venta": 32,
+    "fecha": "11/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 5,
+        "cantidad": 1,
+        "subtotal": 5989.5
+      }
+    ],
+    "total": 5989.5
+  },
+  {
+    "id_venta": 33,
+    "fecha": "13/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      }
+    ],
+    "total": 11610.17
   }
 ]
