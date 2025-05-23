@@ -438,7 +438,150 @@
   },
   {
     "id_venta": 25,
-    "fecha": "11/05/2025",
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      }
+    ],
+    "total": 11610.17
+  },
+  {
+    "id_venta": 26,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      }
+    ],
+    "total": 11610.17
+  },
+  {
+    "id_venta": 27,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      }
+    ],
+    "total": 11610.17
+  },
+  {
+    "id_venta": 28,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      }
+    ],
+    "total": 11610.17
+  },
+  {
+    "id_venta": 29,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      }
+    ],
+    "total": 11610.17
+  },
+  {
+    "id_venta": 30,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      }
+    ],
+    "total": 11610.17
+  },
+  {
+    "id_venta": 31,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      }
+    ],
+    "total": 11610.17
+  },
+  {
+    "id_venta": 32,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      }
+    ],
+    "total": 11610.17
+  },
+  {
+    "id_venta": 33,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 2,
+        "subtotal": 23220.34
+      }
+    ],
+    "total": 23220.34
+  },
+  {
+    "id_venta": 34,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 2,
+        "subtotal": 23220.34
+      }
+    ],
+    "total": 23220.34
+  },
+  {
+    "id_venta": 35,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      }
+    ],
+    "total": 11610.17
+  },
+  {
+    "id_venta": 36,
+    "fecha": "23/05/2025",
     "id_cliente": 17,
     "productos": [
       {
@@ -455,99 +598,8 @@
     "total": 32719.57
   },
   {
-    "id_venta": 26,
-    "fecha": "11/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 6,
-        "cantidad": 1,
-        "subtotal": 2395.8
-      }
-    ],
-    "total": 2395.8
-  },
-  {
-    "id_venta": 27,
-    "fecha": "11/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 3,
-        "cantidad": 1,
-        "subtotal": 31664.09
-      }
-    ],
-    "total": 31664.09
-  },
-  {
-    "id_venta": 28,
-    "fecha": "11/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 5,
-        "cantidad": 1,
-        "subtotal": 5989.5
-      }
-    ],
-    "total": 5989.5
-  },
-  {
-    "id_venta": 29,
-    "fecha": "11/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 5,
-        "cantidad": 1,
-        "subtotal": 5989.5
-      }
-    ],
-    "total": 5989.5
-  },
-  {
-    "id_venta": 30,
-    "fecha": "11/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 5,
-        "cantidad": 1,
-        "subtotal": 5989.5
-      }
-    ],
-    "total": 5989.5
-  },
-  {
-    "id_venta": 31,
-    "fecha": "11/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 5,
-        "cantidad": 1,
-        "subtotal": 5989.5
-      }
-    ],
-    "total": 5989.5
-  },
-  {
-    "id_venta": 32,
-    "fecha": "11/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 5,
-        "cantidad": 1,
-        "subtotal": 5989.5
-      }
-    ],
-    "total": 5989.5
-  },
-  {
-    "id_venta": 33,
-    "fecha": "13/05/2025",
+    "id_venta": 37,
+    "fecha": "23/05/2025",
     "id_cliente": 17,
     "productos": [
       {
@@ -557,5 +609,67 @@
       }
     ],
     "total": 11610.17
+  },
+  {
+    "id_venta": 38,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      }
+    ],
+    "total": 11610.17
+  },
+  {
+    "id_venta": 39,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 2,
+        "subtotal": 23220.34
+      }
+    ],
+    "total": 23220.34
+  },
+  {
+    "id_venta": 40,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 2,
+        "cantidad": 1,
+        "subtotal": 21109.4
+      }
+    ],
+    "total": 21109.4
+  },
+  {
+    "id_venta": 41,
+    "fecha": "23/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 1,
+        "subtotal": 11610.17
+      },
+      {
+        "id_producto": 2,
+        "cantidad": 2,
+        "subtotal": 42218.8
+      },
+      {
+        "id_producto": 3,
+        "cantidad": 1,
+        "subtotal": 31664.09
+      }
+    ],
+    "total": 85493.06
   }
 ]

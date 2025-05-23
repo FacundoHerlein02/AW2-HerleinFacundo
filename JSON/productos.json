@@ -4,7 +4,7 @@
     "marca": "Honda",
     "descripcion": "Honda xr150",
     "precio": 11610.17,
-    "stock": 7,
+    "stock": 0,
     "img": "https://motos.honda.com.ar/uploads/modelos/72/images/slid_productoers/416_0s-0slid_productoe-motos-xr150l-2025.jpg",
     "imagenes": [
       "https://motos.honda.com.ar/uploads/modelos/72/images/slid_productoers/418_0s-0img-web-xr150l-2025-motor.jpg",
@@ -17,7 +17,7 @@
     "marca": "Honda",
     "descripcion": "Honda xr300",
     "precio": 21109.4,
-    "stock": 8,
+    "stock": 7,
     "img": "https://motos.honda.com.ar/uploads/modelos/63/images/slid_productoers/346_0s-0370-0s-0img-web-tornado-2024-roja.jpg",
     "imagenes": [
       "https://motos.honda.com.ar/uploads/modelos/63/images/slid_productoers/347_0s-0371-0s-0img-web-tornado-2024-motor.jpg",
@@ -30,7 +30,7 @@
     "marca": "Honda",
     "descripcion": "Africa Twin",
     "precio": 31664.09,
-    "stock": 9,
+    "stock": 8,
     "img": "https://motos.honda.com.ar/uploads/modelos/51/images/slid_productoers/264_5s-5img-web-africa-adventure-diseno.jpg",
     "imagenes": [
       "https://motos.honda.com.ar/uploads/modelos/51/images/slid_productoers/265_0s-0img-web-africa-adventure-motor.jpg",
