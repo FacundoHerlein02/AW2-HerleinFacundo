@@ -4,7 +4,7 @@
     "marca": "Honda",
     "descripcion": "Honda xr150",
     "precio": 11610.17,
-    "stock": 0,
+    "stock": 7,
     "img": "https://motos.honda.com.ar/uploads/modelos/72/images/slid_productoers/416_0s-0slid_productoe-motos-xr150l-2025.jpg",
     "imagenes": [
       "https://motos.honda.com.ar/uploads/modelos/72/images/slid_productoers/418_0s-0img-web-xr150l-2025-motor.jpg",
@@ -30,7 +30,7 @@
     "marca": "Honda",
     "descripcion": "Africa Twin",
     "precio": 31664.09,
-    "stock": 8,
+    "stock": 7,
     "img": "https://motos.honda.com.ar/uploads/modelos/51/images/slid_productoers/264_5s-5img-web-africa-adventure-diseno.jpg",
     "imagenes": [
       "https://motos.honda.com.ar/uploads/modelos/51/images/slid_productoers/265_0s-0img-web-africa-adventure-motor.jpg",
@@ -43,7 +43,7 @@
     "marca": "Honda",
     "descripcion": "cbr1000RR",
     "precio": 52773.49,
-    "stock": 8,
+    "stock": 10,
     "img": "https://motos.honda.com.ar/uploads/modelos/58/images/slid_productoers/314_0s-0img-cbr1000rr-sp.jpg",
     "imagenes": [
       "https://motos.honda.com.ar/uploads/modelos/58/images/slid_productoers/315_0s-0332-0s-0adrenalina-pura.jpg",
@@ -82,7 +82,7 @@
     "marca": "Corven",
     "descripcion": "TOURING 250",
     "precio": 17968.5,
-    "stock": 3,
+    "stock": 1,
     "img": "https://http2.mlstatic.com/D_NQ_NP_911569-MLA74059125859_012024-O.webp",
     "imagenes": [
       "https://http2.mlstatic.com/D_NQ_NP_827310-MLA74059125855_012024-O.webp",
@@ -95,7 +95,7 @@
     "marca": "Corven",
     "descripcion": "Corven Triax TXR 250",
     "precio": 14374.8,
-    "stock": 3,
+    "stock": 1,
     "img": "https://http2.mlstatic.com/D_NQ_NP_706119-MLA73955314130_012024-O.webp",
     "imagenes": [
       "https://http2.mlstatic.com/D_NQ_NP_613343-MLA73955314118_012024-O.webp",
@@ -108,7 +108,7 @@
     "marca": "Motomel",
     "descripcion": "Sirius 190",
     "precio": 16171.65,
-    "stock": 5,
+    "stock": 3,
     "img": "https://motomel.com.ar/wp-content/uploads/2023/01/Sirius-190-slid_productoe-azul.png",
     "imagenes": [
       "https://motomel.com.ar/wp-content/uploads/2019/07/Sirius190-1-845x684.jpg",

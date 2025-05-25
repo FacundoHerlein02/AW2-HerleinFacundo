@@ -671,5 +671,56 @@
       }
     ],
     "total": 85493.06
+  },
+  {
+    "id_venta": 42,
+    "fecha": "24/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 2,
+        "cantidad": 1,
+        "subtotal": 21109.4
+      }
+    ],
+    "total": 21109.4
+  },
+  {
+    "id_venta": 43,
+    "fecha": "25/05/2025",
+    "id_cliente": 17,
+    "productos": [
+      {
+        "id_producto": 1,
+        "cantidad": 3,
+        "subtotal": 34830.51
+      },
+      {
+        "id_producto": 2,
+        "cantidad": 3,
+        "subtotal": 63328.2
+      },
+      {
+        "id_producto": 3,
+        "cantidad": 3,
+        "subtotal": 94992.27
+      },
+      {
+        "id_producto": 8,
+        "cantidad": 2,
+        "subtotal": 28749.6
+      },
+      {
+        "id_producto": 9,
+        "cantidad": 2,
+        "subtotal": 32343.3
+      },
+      {
+        "id_producto": 7,
+        "cantidad": 2,
+        "subtotal": 35937
+      }
+    ],
+    "total": 290180.88
   }
 ]
