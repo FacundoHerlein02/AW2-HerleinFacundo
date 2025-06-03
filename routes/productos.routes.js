@@ -1,24 +1,23 @@
 import { Router } from 'express';
-//Utils Productos
-import {getProdByid,getUltId,cargarProductos,getProductos,agregarProducto,actualizarProducto,actualizaProductos} from '../utils/utilsProductos.js';
-//Utils Ventas
-import { cargarVentas,getVentas,actualizaVentas} from '../utils/utilsVentas.js';
+//Actions Productos
+import {newMoto,allProductos,motosId,motosMarca,filtroPrecio,updateMoto,updatePrecioPorMarca,updatePrecioGeneral,deleteMoto} from '../db/actions/productos.actions.js';
+//Actions Ventas
+import {deleteVentasXidProd} from"../db/actions/ventas.actions.js";
+//Conexion a la BD 
+import { connectDataBase } from '../db/connection.js';
 const router= Router();
 
 // /productos
 
 // GET
 //Obtiene todos los productos
-router.get('/allProductos',async(req,res)=>{    
-    try
-    {
-        //lee el json
-        await cargarProductos();
-        //Carga los productos en una variable
-        let productos=getProductos();
+router.get('/allProductos',async(req,res)=>{   
+    try {
+        await connectDataBase()
+        let productos= await allProductos()
         const result= productos.map(e=>{
             return{
-                id:e.id_producto,
+                id:e._id,
                 Marca: e.marca,
                 Descripcion: e.descripcion,
                 Precio:'$'+ e.precio,
@@ -31,35 +30,23 @@ router.get('/allProductos',async(req,res)=>{
         {
             res.status(200).json({mensaje:'Todas las motos',result});
         }
-        else
-        {
-            res.status(404).json({error: `No se encontraron productos.`});
-        }
-    }
-    catch(error)
-    {
+    } catch (error) {
         res.status(500).json({ error: "Error del servidor" });
     }
 });
 
 //Nombre de todas las motos que sean de una marca especifica
-router.get('/motosMarca/:marca',async(req,res)=>{
-    try
-    {
-        //lee el json
-        await cargarProductos();
-        //Carga los productos en una variable
-        let productos=getProductos();
-        const marca= req.params.marca;
-        //Valida que exista la marca
-        const exist = productos.some(p => p.marca === marca);
-        if (!exist) {
+router.get('/motosMarca/:marca',async(req,res)=>{    
+    const marca= req.params.marca;
+    try {     
+        await connectDataBase()           
+        const motosFiltradas= await motosMarca(marca);
+        if (!motosFiltradas || motosFiltradas.length === 0) {
             return res.status(404).json({ mensaje: "La marca no existe" });
-        };
-        const motosFiltradas=productos.filter(e =>e.marca == marca); //Filtra por marca      
+        }
         const result= motosFiltradas.map(e=>{
             return{
-                id:e.id_producto,
+                id:e._id,
                 Marca: e.marca,
                 Descripcion: e.descripcion,
                 Precio:'$'+ e.precio,
@@ -72,27 +59,21 @@ router.get('/motosMarca/:marca',async(req,res)=>{
         {
             res.status(200).json({mensaje:`Productos de la marca ${result[0].Marca}`,result});
         }
-    }
-    catch(error)
-    {
+    } catch (error) {
         res.status(500).json({ error: "Error del servidor" });
     }
 });
-router.get('/motosId/:id',async(req,res)=>{
-    try
-    {
-        //lee el json
-        await cargarProductos();
-        //Carga los productos en una variable
-        let productos=getProductos();
-        const id= Number(req.params.id);
+router.get('/motosId/:id',async(req,res)=>{    
+    const id=req.params.id;
+    try { 
+        await connectDataBase()       
         //Busca la moto       
-        const moto = productos.find(p => p.id_producto === id);
+        const moto = await motosId(id);
         if (!moto) {
             return res.status(404).json({ mensaje: "El producto no existe" });
-        };              
+        };
         const result={
-            id:moto.id_producto,
+            id:moto._id,
             Marca: moto.marca,
             Descripcion: moto.descripcion,
             Precio:'$'+ moto.precio,
@@ -100,24 +81,20 @@ router.get('/motosId/:id',async(req,res)=>{
             Imagen: moto.img,
             Imagenes: moto.imagenes                        
         };       
-        res.status(200).json({mensaje:`Moto encontrada ${result.id}`,result});        
-    }
-    catch(error)
-    {
+        res.status(200).json({mensaje:`Moto encontrada ${result.id}`,result}); 
+
+    } catch (error) {
         res.status(500).json({ error: "Error del servidor" });
     }
 });
 //Todas las motos en un rango de precio
-router.get('/filtroPrecio/:min/:max',async(req,res)=>{
+router.get('/filtroPrecio/:min/:max',async(req,res)=>{    
     try 
     {
-        //lee el json
-        await cargarProductos();
-        //Carga los productos en una variable
-        let productos=getProductos();
-        const min= req.params.min;
-        const max= req.params.max;
-        const motosFiltradas=productos.filter(e =>e.precio>=min &&e.precio<=max ); //Filtra por marca      
+        await connectDataBase()
+        const min= Number(req.params.min);
+        const max= Number(req.params.max);
+        const motosFiltradas= await filtroPrecio(min,max)     
         const result= motosFiltradas.map(e=>{
             return{
                 Marca: e.marca,
@@ -141,46 +118,31 @@ router.get('/filtroPrecio/:min/:max',async(req,res)=>{
 
 //POST
 //Añade nuevos productos
-router.post('/newMoto',async (req,res)=>{
-    try 
-    {
-        //lee el json
-        await cargarProductos();        
-        const {marca,descripcion,precio,stock,img,imagenes} = req.body;
+router.post('/newMoto',async (req,res)=>{    
+    const {marca,descripcion,precio,stock,img,imagenes} = req.body;
+    try {
+        await connectDataBase()
         if(!marca||!descripcion||!precio||!stock||!img||!imagenes)
         {
             return res.status(401).json("Faltan completar campos");
         }
         else
-        {
-            //Crea el producto
-            const newMoto={
-                id_producto:getUltId(),
-                marca:marca,
-                descripcion:descripcion,
-                precio:precio,
-                stock:stock,
-                img:img,
-                imagenes:imagenes
-            }
-            //Añade a la lista
-            await agregarProducto(newMoto);            
-            res.status(201).json(newMoto);
+        {        
+            const NuevaMoto= await newMoto({marca,descripcion,precio,stock,img,imagenes})
+            console.log(NuevaMoto);
+            res.status(201).json(NuevaMoto);
         }
-    } 
-    catch (error) 
-    {
+    } catch (error) {
         res.status(500).json({ error: "Error del servidor" });
     }
 });
 //PUT
 //Actualiza los datos de una moto
-router.put('/updateMoto',async (req,res)=>{
+router.put('/updateMoto',async (req,res)=>{    
+    const {id,marca,descripcion,precio,stock,img,imagenes} = req.body;
     try 
     {
-        //lee el json
-        await cargarProductos();        
-        const {id,marca,descripcion,precio,stock,img,imagenes} = req.body;
+        await connectDataBase()       
         if(!id||!marca||!descripcion||!precio||!stock||!img||!imagenes)
         {
             return res.status(401).json("Faltan completar campos");
@@ -188,7 +150,7 @@ router.put('/updateMoto',async (req,res)=>{
         else
         {
             //Busca si existe el producto
-            const moto= getProdByid(id);
+            const moto= await motosId(id);
             if (!moto) {
                 return res.status(404).json("Moto no encontrada");
             }   
@@ -201,8 +163,12 @@ router.put('/updateMoto',async (req,res)=>{
                 moto.stock=stock
                 moto.img=img
                 moto.imagenes=imagenes
-                await actualizarProducto(moto)                
-                res.status(200).json("Producto actualizado correctamente")                        
+                const MotoActualizada=await updateMoto(id,moto)     
+                if(MotoActualizada)
+                {
+                    return res.status(200).json({mensaje:"Producto actualizado correctamente",MotoActualizada});   
+                }           
+                return res.status(404).json({error:"No se pudo actualizar"});                    
             }            
         }
     } 
@@ -217,9 +183,8 @@ router.put('/updateMoto',async (req,res)=>{
 router.put('/updatePrecio',async(req,res)=>{
     try
     {
-        //lee el json
-        await cargarProductos();
-        let  productos=getProductos(); 
+        await connectDataBase()       
+        let  productos=await allProductos(); 
         const {id,marca,porcentaje}= req.body;
         //Valida que se ingrese un numero
         if (typeof porcentaje !== 'number') {
@@ -229,7 +194,7 @@ router.put('/updatePrecio',async(req,res)=>{
         //Actualiza por id
         if(id)
         {
-            const moto= productos.find(m=>m.id_producto==id);
+            const moto= await motosId(id);
             if(!moto)
             {
                 return res.status(404).json("Moto no encontrada");
@@ -241,57 +206,50 @@ router.put('/updatePrecio',async(req,res)=>{
                     return res.status(400).json("No se permite precio negativo");
                 }                             
                 moto.precio=precioNuevo
-                await actualizarProducto(moto)
-                res.status(200).json("Precio actualizado correctamente");
+                const MotoActualizada=await updateMoto(id,moto)   
+                return res.status(200).json({mensaje:"Precio actualizado correctamente",MotoActualizada});
             }
             
         }
         //Actualiza por marca
         else if(marca)
         {
-            const motos= productos.filter(m=>m.marca==marca);
+            const motos= await motosMarca(marca);
             if(!motos)
             {
                 return res.status(404).json("Marca no encontrada");
             }
             else
-            {
-                
+            {                
+                const factor = 1 + (porcentaje / 100);
                 //verificar que el precio no sea negativo
                 const preciosInvalidos = motos.some(bike => {                    
-                    precioNuevo = Math.round((bike.precio + (bike.precio * (porcentaje / 100))) * 100) / 100;
+                    precioNuevo = Math.round(bike.precio * factor * 100)/100;
                     return precioNuevo <= 0;
                 });
                 if (preciosInvalidos) {
                     return res.status(400).json("No se permite precio negativo");
                 }
-                motos.forEach(bike => {                    
-                    precioNuevo = Math.round((bike.precio + (bike.precio * (porcentaje / 100))) * 100) / 100;                    
-                    bike.precio=precioNuevo;
-                });
-                await actualizaProductos(productos);
-                res.status(200).json("Precios actualizados correctamente"); 
+                //Actualiza por marca
+                await updatePrecioPorMarca(marca, factor);
+                res.status(200).json("Precios actualizados correctamente");
             }
         }
         //Actualiza todos
         else
         {
+            const factor = 1 + (porcentaje / 100);
             //verificar que el precio no sea negativo
-            const preciosInvalidos = productos.some(bike => {            
-            precioNuevo = Math.round((bike.precio + (bike.precio * (porcentaje / 100))) * 100) / 100;
-            return precioNuevo <= 0;
+            const preciosInvalidos = productos.some(bike => {                    
+                precioNuevo = Math.round(bike.precio * factor * 100)/100;
+                return precioNuevo <= 0;
             });
             if (preciosInvalidos) {
                 return res.status(400).json("No se permite precio negativo");
             }
-            productos.forEach(bike => {                  
-                precioNuevo = Math.round((bike.precio + (bike.precio * (porcentaje / 100))) * 100) / 100;                                                  
-                bike.precio=precioNuevo;
-            });
-            await actualizaProductos(productos);            
-            res.status(200).json("Precios actualizados correctamente");
+            await updatePrecioGeneral(factor)       
+            return res.status(200).json("Precios actualizados correctamente");
         }       
-        
     } 
     catch (error) 
     {
@@ -302,29 +260,21 @@ router.put('/updatePrecio',async(req,res)=>{
 //DELETE
 
 router.delete('/deleteMoto/:id',async (req,res)=>{
+    const id=req.params.id;
     try 
-    {
-        const id= Number(req.params.id);
-        //lee el json
-        await cargarProductos();
-        await cargarVentas();
-        let productos= getProductos();
-        let ventas = getVentas();
-        //Valida que exista la moto
-        const exist = productos.some(p => p.id_producto === id);
-        if (!exist) {
+    {   
+        await connectDataBase();   
+        let moto= await motosId(id);        
+        //Valida que exista la moto        
+        if (!moto) {
             return res.status(404).json({ mensaje: "La moto que se intenta eliminar no existe" });
         };
         // Elimina las ventas relacionadas a esa moto        
-        ventas = ventas.filter(
-            v =>!v.productos.some(p => p.id_producto === Number(id))
-        );
+        const ventasEliminadas = await deleteVentasXidProd(id);
         //Elimina la moto
-        productos=productos.filter(p=>p.id_producto !==Number(id));
-        //Graba las ventas ya filtradas
-        await actualizaVentas(ventas);
-        await actualizaProductos(productos);
-        res.status(200).json({ mensaje: "Moto eliminada correctamente" });
+        const motoEliminada =await deleteMoto(id)
+        //Graba las ventas ya filtradas        
+        res.status(200).json({ mensaje: "Moto eliminada correctamente",motoEliminada,ventasEliminadas });
     } 
     catch (error) 
     {

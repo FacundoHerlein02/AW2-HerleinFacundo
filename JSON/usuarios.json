@@ -1,121 +1,130 @@
-[
-  {
-    "id_cliente": 1,
-    "Nombre": "Facundo",
-    "Apellido": "Herlein",
-    "Usuario": "facu57",
-    "Contraseña": "facu123"
+[{
+  "_id": {
+    "$oid": "6833b4044c98cca3844b2693"
   },
-  {
-    "id_cliente": 2,
-    "Nombre": "Lucía",
-    "Apellido": "Martínez",
-    "Usuario": "luci89",
-    "Contraseña": "luci123"
+  "nombre": "Facu",
+  "apellido": "herlein",
+  "usuario": "facuMongo",
+  "contraseña": "$2b$10$Z3sBwKPoCgcO4yfZGYI.MuDTBWRleCO4pq8CMR7OKtoIN139C5xe.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68366021db890bbbadedc76e"
   },
-  {
-    "id_cliente": 3,
-    "Nombre": "Juan",
-    "Apellido": "Gómez",
-    "Usuario": "juanito22",
-    "Contraseña": "juan123"
+  "nombre": "Facu",
+  "apellido": "Herlein",
+  "usuario": "FacuAw2",
+  "contraseña": "$2b$10$lYwZjlmm3avMzqaimYkv3uZQ5q3ss1LNkZvIPmCm.q.X7koxYr9BK",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683669d9db890bbbadedc780"
   },
-  {
-    "id_cliente": 4,
-    "Nombre": "Camila",
-    "Apellido": "Pérez",
-    "Usuario": "cami09",
-    "Contraseña": "cami123"
+  "nombre": "Facu",
+  "apellido": "Herlein",
+  "usuario": "pruebaAw2",
+  "contraseña": "$2b$10$6LN9c0u5H1iXEfwJQs2Bb.sZCF9UbvS2qt1LEPyFAtBCx8IeEu4.O",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837329bd0b7f4f956b7d6a0"
   },
-  {
-    "id_cliente": 5,
-    "Nombre": "Mateo",
-    "Apellido": "López",
-    "Usuario": "matex34",
-    "Contraseña": "mate123"
+  "nombre": "Facu",
+  "apellido": "Herlein",
+  "usuario": "Register",
+  "contraseña": "$2b$10$k2YGDS.MAXxrYk6M2KHr5.JoVO6raWpXCX3TfMg0rdB4aYR6ZZE.2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683732f8d0b7f4f956b7d6a8"
   },
-  {
-    "id_cliente": 6,
-    "Nombre": "Valentina",
-    "Apellido": "Sánchez",
-    "Usuario": "valen77",
-    "Contraseña": "valen123"
+  "nombre": "Silvia",
+  "apellido": "perez",
+  "usuario": "SP",
+  "contraseña": "$2b$10$DE/dX8XDTYzNke/2w7t16e3cH/3BcDyhvsVNLPULSnNySpDLsL6Gu",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837332ad0b7f4f956b7d6b0"
   },
-  {
-    "id_cliente": 7,
-    "Nombre": "Tomás",
-    "Apellido": "Rodríguez",
-    "Usuario": "tomy56",
-    "Contraseña": "tomy123"
+  "nombre": "Facu",
+  "apellido": "Herlein",
+  "usuario": "FacuPost1",
+  "contraseña": "$2b$10$.C.Efmkq8B7aLzIJQQHPGubEv4KC1w3ne8ATRAVeDof/KKS/0PikC",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68373340d0b7f4f956b7d6b4"
   },
-  {
-    "id_cliente": 8,
-    "Nombre": "Sofía",
-    "Apellido": "García",
-    "Usuario": "sofi03",
-    "Contraseña": "sofi123"
+  "nombre": "Facu",
+  "apellido": "Herlein",
+  "usuario": "1",
+  "contraseña": "$2b$10$ecLiQo6itkKqyweEVuCD6OmkUVg0tyLkgxgkzG9p6bgA6WkN2AKQ6",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837334cd0b7f4f956b7d6b8"
   },
-  {
-    "id_cliente": 9,
-    "Nombre": "Agustín",
-    "Apellido": "Fernández",
-    "Usuario": "agus91",
-    "Contraseña": "agus123"
+  "nombre": "Facu",
+  "apellido": "Herlein",
+  "usuario": "123",
+  "contraseña": "$2b$10$MjZY0NdPp/EHwdNjbD8Y2.osmXNEb23WxTxeQxcyONyGQ55Mu9w6.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68373365d0b7f4f956b7d6bd"
   },
-  {
-    "id_cliente": 10,
-    "Nombre": "Martina",
-    "Apellido": "Ruiz",
-    "Usuario": "martu88",
-    "Contraseña": "martu123"
+  "nombre": "1",
+  "apellido": "1",
+  "usuario": "2",
+  "contraseña": "$2b$10$MPm4ZwLL.1cgZQwhOCcDGuJ6JBEOSTncf.dYxeg.nZLRWY7grO.RG",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683735114dcdd0218ea370d6"
   },
-  {
-    "id_cliente": 11,
-    "Nombre": "prueba",
-    "Apellido": "Apellidoprueba",
-    "Usuario": "user123",
-    "Contraseña": "clave123"
+  "nombre": "Reg",
+  "apellido": "Reg",
+  "usuario": "Reg",
+  "contraseña": "$2b$10$Eo6BR8M3rHE.kalsdjKpIO8jY1TqNi6CYc.1dQTrmTm4JD2mQ2odq",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68373533652efabf27924b8a"
   },
-  {
-    "id_cliente": 12,
-    "Nombre": "facuu",
-    "Apellido": "H",
-    "Usuario": "facuEncriptado",
-    "Contraseña": "$2b$10$X2wbQ8dtdzpkehepQpjRwucciaHYLFrBC0sCv1EoZ.X2oJoNC5JCu"
+  "nombre": "Reg1",
+  "apellido": "Reg1",
+  "usuario": "Reg1",
+  "contraseña": "$2b$10$TfxQf1a2Nve/IDQzOT1Li.SKU71tpc0L6NntKxJsBvTuHADN73hC.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837c0e12020a78fb858e827"
   },
-  {
-    "id_cliente": 13,
-    "Nombre": "facuu",
-    "Apellido": "Her",
-    "Usuario": "facuEncrip23",
-    "Contraseña": "$2b$10$tLlsdfkkcPPU1ODWCyqs9.BXivA04qBZJYI5D.S2V6BZG1.KlroRq"
+  "nombre": "FAW2",
+  "apellido": "FAW2",
+  "usuario": "FAW2",
+  "contraseña": "$2b$10$YVL6aC5AI5O4fudhbFuRCeni55KYd1pT8lreFGpI6nam2ScvvERjy",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68387fce7d517eeefddb6aec"
   },
-  {
-    "id_cliente": 14,
-    "Nombre": "Facu",
-    "Apellido": "Perez",
-    "Usuario": "XxPerezxX",
-    "Contraseña": "$2b$10$Ia.YScdXxdyQuAdfx1ocaOWz1I2fNX0exNZz2DeT7NTDJyhCu0HMq"
-  },
-  {
-    "id_cliente": 15,
-    "Nombre": "prueba18",
-    "Apellido": "prueba18",
-    "Usuario": "prueba18",
-    "Contraseña": "$2b$10$CYfY45Q9f4wzNI6KKbQez.K8uP4U6VdMr6p523IMVgNzoYMENdDZ6"
-  },
-  {
-    "id_cliente": 16,
-    "Nombre": "prueBAS",
-    "Apellido": "prueBAS",
-    "Usuario": "prueBAS",
-    "Contraseña": "$2b$10$5e93VQ6qAI3GLOTRAKgsqe8rni.ah5qAx4OFJ/1899Ll1nqQfO5f2"
-  },
-  {
-    "id_cliente": 17,
-    "Nombre": "FacuPost",
-    "Apellido": "FacuPost",
-    "Usuario": "FacuPost",
-    "Contraseña": "$2b$10$qp.LxhjRAmPtiFqGhQ1.UeTSWFGYWgap0dsFdK8i6vADbwbI0/YaO"
-  }
-]
+  "nombre": "prueBAS",
+  "apellido": "prueBAS",
+  "usuario": "prueBAS",
+  "contraseña": "$2b$10$51J5HuoZqomXAKy.lZibuu/doeBKZqd30sKv3o8deXiRubI.xLjBC",
+  "__v": 0
+}]

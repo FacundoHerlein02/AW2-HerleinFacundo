@@ -1,726 +1,3126 @@
-[
-  {
-    "id_venta": 1,
-    "fecha": "13/4/2025",
-    "id_cliente": 1,
-    "productos": [
-      {
-        "id_producto": 5,
-        "cantidad": 2,
-        "subtotal": 10000
-      }
-    ],
-    "total": 20000
+[{
+  "_id": {
+    "$oid": "6833ae74d323386ebd216268"
   },
-  {
-    "id_venta": 2,
-    "fecha": "23/04/2025",
-    "id_cliente": "10",
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 8722.89
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 1,
-        "subtotal": 17445.78
-      }
-    ],
-    "total": 26168.67
-  },
-  {
-    "id_venta": 3,
-    "fecha": "15/05/2025",
-    "id_cliente": "3",
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 17445.78
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 3,
-        "subtotal": 52337.34
-      }
-    ],
-    "total": 69783.12
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:57:40.600Z"
   },
-  {
-    "id_venta": 4,
-    "fecha": "17/02/2025",
-    "id_cliente": "6",
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 8722.89
+  "updatedAt": {
+    "$date": "2025-05-25T23:57:40.600Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae91d323386ebd21626c"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 1,
-        "subtotal": 17445.78
-      }
-    ],
-    "total": 26168.67
-  },
-  {
-    "id_venta": 5,
-    "fecha": "17/02/2025",
-    "id_cliente": "6",
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 8722.89
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 3,
-        "subtotal": 52337.34
-      }
-    ],
-    "total": 61060.23
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:09.463Z"
   },
-  {
-    "id_venta": 6,
-    "fecha": "17/02/2025",
-    "id_cliente": "8",
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 8722.89
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:09.463Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae91d323386ebd216270"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 3,
-        "subtotal": 52337.34
-      }
-    ],
-    "total": 61060.23
-  },
-  {
-    "id_venta": 7,
-    "fecha": "17/02/2025",
-    "id_cliente": "8",
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 8722.89
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 3,
-        "subtotal": 52337.34
-      }
-    ],
-    "total": 61060.23
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:09.619Z"
   },
-  {
-    "id_venta": 8,
-    "fecha": "27/02/2025",
-    "id_cliente": "4",
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 8722.89
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:09.619Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae91d323386ebd216274"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 3,
-        "subtotal": 52337.34
-      }
-    ],
-    "total": 61060.23
-  },
-  {
-    "id_venta": 9,
-    "fecha": "27/02/2025",
-    "id_cliente": "6",
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 8722.89
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 3,
-        "subtotal": 52337.34
-      }
-    ],
-    "total": 61060.23
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:09.768Z"
   },
-  {
-    "id_venta": 10,
-    "fecha": "2025/04/27",
-    "id_cliente": 10,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 4,
-        "subtotal": 34891.56
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:09.768Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae91d323386ebd216278"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 1,
-        "subtotal": 17445.78
-      }
-    ],
-    "total": 52337.34
-  },
-  {
-    "id_venta": 11,
-    "fecha": "2025/04/27",
-    "id_cliente": 10,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 17445.78
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 3,
-        "subtotal": 52337.34
-      }
-    ],
-    "total": 69783.12
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:09.975Z"
   },
-  {
-    "id_venta": 12,
-    "fecha": "2025/07/27",
-    "id_cliente": 2,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 17445.78
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:09.975Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae92d323386ebd21627c"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 3,
-        "subtotal": 52337.34
-      }
-    ],
-    "total": 69783.12
-  },
-  {
-    "id_venta": 13,
-    "fecha": "2025/07/17",
-    "id_cliente": 1,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 17445.78
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 3,
-        "subtotal": 52337.34
-      }
-    ],
-    "total": 69783.12
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:10.208Z"
   },
-  {
-    "id_venta": 14,
-    "fecha": "2025/07/17",
-    "id_cliente": 3,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 17445.78
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:10.208Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae92d323386ebd216280"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 2,
-        "subtotal": 34891.56
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 3,
-        "cantidad": 2,
-        "subtotal": 52337.34
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:10.455Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:10.455Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae92d323386ebd216284"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 4,
-        "cantidad": 2,
-        "subtotal": 87228.9
-      }
-    ],
-    "total": 191903.58
-  },
-  {
-    "id_venta": 15,
-    "fecha": "2025/04/17",
-    "id_cliente": 13,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 17445.78
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 2,
-        "subtotal": 34891.56
-      }
-    ],
-    "total": 52337.34
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:10.625Z"
   },
-  {
-    "id_venta": 16,
-    "fecha": "28/04/2025",
-    "id_cliente": 1,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 8722.89
-      }
-    ],
-    "total": 8722.89
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:10.625Z"
   },
-  {
-    "id_venta": 17,
-    "fecha": "2025/04/17",
-    "id_cliente": 2,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 17445.78
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae92d323386ebd216288"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 2,
-        "subtotal": 34891.56
-      }
-    ],
-    "total": 52337.34
-  },
-  {
-    "id_venta": 18,
-    "fecha": "17/04/2025",
-    "id_cliente": 1,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 8722.89
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 1,
-        "subtotal": 17445.78
-      }
-    ],
-    "total": 26168.67
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:10.813Z"
   },
-  {
-    "id_venta": 19,
-    "fecha": "2025/04/17",
-    "id_cliente": 2,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 17445.78
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:10.813Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae92d323386ebd21628c"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 2,
-        "subtotal": 34891.56
-      }
-    ],
-    "total": 52337.34
-  },
-  {
-    "id_venta": 20,
-    "fecha": "2025/04/12",
-    "id_cliente": 2,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 8722.89
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 1,
-        "subtotal": 17445.78
-      }
-    ],
-    "total": 26168.67
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:11.000Z"
   },
-  {
-    "id_venta": 21,
-    "fecha": "17/04/2025",
-    "id_cliente": 1,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 8722.89
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:11.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae93d323386ebd216290"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 1,
-        "subtotal": 17445.78
-      }
-    ],
-    "total": 26168.67
-  },
-  {
-    "id_venta": 22,
-    "fecha": "17/04/2025",
-    "id_cliente": 1,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 8722.89
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 1,
-        "subtotal": 17445.78
-      }
-    ],
-    "total": 26168.67
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:11.421Z"
   },
-  {
-    "id_venta": 23,
-    "fecha": "2025/04/12",
-    "id_cliente": 4,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 8722.89
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:11.421Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae93d323386ebd216294"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 1,
-        "subtotal": 17445.78
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 3,
-        "cantidad": 2,
-        "subtotal": 52337.34
-      }
-    ],
-    "total": 78506.01
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:11.575Z"
   },
-  {
-    "id_venta": 24,
-    "fecha": "11/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:11.575Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae93d323386ebd216298"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 1,
-        "subtotal": 21109.4
-      }
-    ],
-    "total": 32719.57
-  },
-  {
-    "id_venta": 25,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
-      }
-    ],
-    "total": 11610.17
-  },
-  {
-    "id_venta": 26,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
-      }
-    ],
-    "total": 11610.17
-  },
-  {
-    "id_venta": 27,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
-      }
-    ],
-    "total": 11610.17
-  },
-  {
-    "id_venta": 28,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
-      }
-    ],
-    "total": 11610.17
-  },
-  {
-    "id_venta": 29,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
-      }
-    ],
-    "total": 11610.17
-  },
-  {
-    "id_venta": 30,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
-      }
-    ],
-    "total": 11610.17
-  },
-  {
-    "id_venta": 31,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
-      }
-    ],
-    "total": 11610.17
-  },
-  {
-    "id_venta": 32,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
-      }
-    ],
-    "total": 11610.17
-  },
-  {
-    "id_venta": 33,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 23220.34
-      }
-    ],
-    "total": 23220.34
-  },
-  {
-    "id_venta": 34,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 23220.34
-      }
-    ],
-    "total": 23220.34
-  },
-  {
-    "id_venta": 35,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
-      }
-    ],
-    "total": 11610.17
-  },
-  {
-    "id_venta": 36,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 1,
-        "subtotal": 21109.4
-      }
-    ],
-    "total": 32719.57
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:11.971Z"
   },
-  {
-    "id_venta": 37,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
-      }
-    ],
-    "total": 11610.17
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:11.971Z"
   },
-  {
-    "id_venta": 38,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
-      }
-    ],
-    "total": 11610.17
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae94d323386ebd21629c"
   },
-  {
-    "id_venta": 39,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 2,
-        "subtotal": 23220.34
-      }
-    ],
-    "total": 23220.34
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:12.131Z"
   },
-  {
-    "id_venta": 40,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 2,
-        "cantidad": 1,
-        "subtotal": 21109.4
-      }
-    ],
-    "total": 21109.4
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:12.131Z"
   },
-  {
-    "id_venta": 41,
-    "fecha": "23/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 1,
-        "subtotal": 11610.17
-      },
-      {
-        "id_producto": 2,
-        "cantidad": 2,
-        "subtotal": 42218.8
-      },
-      {
-        "id_producto": 3,
-        "cantidad": 1,
-        "subtotal": 31664.09
-      }
-    ],
-    "total": 85493.06
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae94d323386ebd2162a0"
   },
-  {
-    "id_venta": 42,
-    "fecha": "24/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 2,
-        "cantidad": 1,
-        "subtotal": 21109.4
-      }
-    ],
-    "total": 21109.4
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:12.301Z"
   },
-  {
-    "id_venta": 43,
-    "fecha": "25/05/2025",
-    "id_cliente": 17,
-    "productos": [
-      {
-        "id_producto": 1,
-        "cantidad": 3,
-        "subtotal": 34830.51
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:12.301Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae94d323386ebd2162a4"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 2,
-        "cantidad": 3,
-        "subtotal": 63328.2
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 3,
-        "cantidad": 3,
-        "subtotal": 94992.27
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:12.432Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:12.432Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae94d323386ebd2162a8"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 8,
-        "cantidad": 2,
-        "subtotal": 28749.6
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
       },
-      {
-        "id_producto": 9,
-        "cantidad": 2,
-        "subtotal": 32343.3
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:12.591Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:12.591Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae94d323386ebd2162ac"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
       },
-      {
-        "id_producto": 7,
-        "cantidad": 2,
-        "subtotal": 35937
-      }
-    ],
-    "total": 290180.88
-  }
-]
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:12.743Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:12.743Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae94d323386ebd2162b0"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:12.931Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:12.931Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae95d323386ebd2162b4"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:13.165Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:13.165Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae95d323386ebd2162b8"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:13.367Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:13.367Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae95d323386ebd2162bc"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:13.506Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:13.506Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae95d323386ebd2162c0"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:13.707Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:13.707Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae95d323386ebd2162c4"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:13.895Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:13.895Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae96d323386ebd2162c8"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:14.082Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:14.082Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae96d323386ebd2162cc"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:14.284Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:14.284Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae96d323386ebd2162d0"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:14.438Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:14.438Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae96d323386ebd2162d4"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:14.624Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:14.624Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae96d323386ebd2162d8"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:14.821Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:14.821Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae96d323386ebd2162dc"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:14.990Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:14.990Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae97d323386ebd2162e0"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:15.504Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:15.504Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae97d323386ebd2162e4"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:15.688Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:15.688Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae98d323386ebd2162e8"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:16.031Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:16.031Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae98d323386ebd2162ec"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:16.200Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:16.200Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae98d323386ebd2162f0"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:16.370Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:16.370Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae98d323386ebd2162f4"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:16.557Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:16.557Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae98d323386ebd2162f8"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:16.743Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:16.743Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae98d323386ebd2162fc"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:16.913Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:16.913Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae99d323386ebd216300"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:17.055Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:17.055Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae99d323386ebd216304"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:17.240Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:17.240Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae99d323386ebd216308"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:17.630Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:17.630Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae99d323386ebd21630c"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:17.848Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:17.848Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9ad323386ebd216310"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:18.020Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:18.020Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9ad323386ebd216314"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:18.265Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:18.265Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9ad323386ebd216318"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:18.665Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:18.665Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9ad323386ebd21631c"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:18.898Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:18.898Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9bd323386ebd216320"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:19.117Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:19.117Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9bd323386ebd216324"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:19.317Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:19.317Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9bd323386ebd216328"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:19.520Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:19.520Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9bd323386ebd21632c"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:19.721Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:19.721Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9bd323386ebd216330"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:19.907Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:19.907Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9cd323386ebd216334"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:20.123Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:20.123Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9cd323386ebd216338"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:20.355Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:20.355Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9cd323386ebd21633c"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:20.525Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:20.525Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9cd323386ebd216340"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:20.726Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:20.726Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9cd323386ebd216344"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:20.913Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:20.913Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9dd323386ebd216348"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:21.097Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:21.097Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9dd323386ebd21634c"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:21.269Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:21.269Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9dd323386ebd216350"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:21.516Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:21.516Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9dd323386ebd216354"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:21.717Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:21.717Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9dd323386ebd216358"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:21.949Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:21.949Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9ed323386ebd21635c"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:22.120Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:22.120Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9ed323386ebd216360"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:22.305Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:22.305Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9ed323386ebd216364"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:22.555Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:22.555Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9ed323386ebd216368"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:22.740Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:22.740Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9ed323386ebd21636c"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:22.956Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:22.956Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9fd323386ebd216370"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:23.140Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:23.140Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9fd323386ebd216374"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:23.327Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:23.327Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9fd323386ebd216378"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:23.512Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:23.512Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9fd323386ebd21637c"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:23.729Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:23.729Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833ae9fd323386ebd216380"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:23.914Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:23.914Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833aea0d323386ebd216384"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:24.099Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:24.099Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833aea0d323386ebd216388"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "17",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "68338ebc7b6e43c4a78df6d7"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    },
+    {
+      "id_producto": {
+        "$oid": "6833916eb58885eb1b8539e3"
+      },
+      "cantidad": 2,
+      "subtotal": 21725.1
+    }
+  ],
+  "total": 43450.2,
+  "createdAt": {
+    "$date": "2025-05-25T23:58:24.284Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-25T23:58:24.284Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833be81404887ad40812efc"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "21",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 1,
+      "subtotal": 21109.4
+    }
+  ],
+  "total": 21109.4,
+  "createdAt": {
+    "$date": "2025-05-26T01:06:09.570Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-26T01:06:09.570Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833bf39404887ad40812eff"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "21",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 1,
+      "subtotal": 21109.4
+    }
+  ],
+  "total": 21109.4,
+  "createdAt": {
+    "$date": "2025-05-26T01:09:13.846Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-26T01:09:13.846Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833bf6a404887ad40812f02"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "21",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 1,
+      "subtotal": 21109.4
+    }
+  ],
+  "total": 21109.4,
+  "createdAt": {
+    "$date": "2025-05-26T01:10:02.909Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-26T01:10:02.909Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833bfcd404887ad40812f05"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "21",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 1,
+      "subtotal": 21109.4
+    }
+  ],
+  "total": 21109.4,
+  "createdAt": {
+    "$date": "2025-05-26T01:11:41.430Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-26T01:11:41.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833c02c404887ad40812f08"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "21",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 1,
+      "subtotal": 21109.4
+    }
+  ],
+  "total": 21109.4,
+  "createdAt": {
+    "$date": "2025-05-26T01:13:16.020Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-26T01:13:16.020Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833c063404887ad40812f0b"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "21",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 1,
+      "subtotal": 21109.4
+    }
+  ],
+  "total": 21109.4,
+  "createdAt": {
+    "$date": "2025-05-26T01:14:11.531Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-26T01:14:11.531Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833c086404887ad40812f0e"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "21",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 1,
+      "subtotal": 21109.4
+    }
+  ],
+  "total": 21109.4,
+  "createdAt": {
+    "$date": "2025-05-26T01:14:46.594Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-26T01:14:46.594Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833c0a5404887ad40812f1b"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "21",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 1,
+      "subtotal": 21109.4
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 1,
+      "subtotal": 11610.17
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef77"
+      },
+      "cantidad": 1,
+      "subtotal": 31664.09
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef79"
+      },
+      "cantidad": 1,
+      "subtotal": 5989.5
+    }
+  ],
+  "total": 70373.16,
+  "createdAt": {
+    "$date": "2025-05-26T01:15:17.647Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-26T01:15:17.647Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6833c7e89eb2645177565a86"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 2,
+      "subtotal": 42218.8
+    }
+  ],
+  "total": 42218.8,
+  "createdAt": {
+    "$date": "2025-05-26T01:46:16.449Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-26T01:46:16.449Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68350256aedd166d7e26db82"
+  },
+  "fecha": "26/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 2,
+      "subtotal": 23220.34
+    }
+  ],
+  "total": 23220.34,
+  "createdAt": {
+    "$date": "2025-05-27T00:07:50.775Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T00:07:50.775Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68350276aedd166d7e26db87"
+  },
+  "fecha": "26/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 5,
+      "subtotal": 58050.85
+    }
+  ],
+  "total": 58050.85,
+  "createdAt": {
+    "$date": "2025-05-27T00:08:22.865Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T00:08:22.865Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683506db7a174c6921d7463c"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 2,
+      "subtotal": 23220.34
+    }
+  ],
+  "total": 23220.34,
+  "createdAt": {
+    "$date": "2025-05-27T00:27:07.801Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T00:27:07.801Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683513ffbf2a341738d0aca3"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 2,
+      "subtotal": 23220.34
+    }
+  ],
+  "total": 23220.34,
+  "createdAt": {
+    "$date": "2025-05-27T01:23:11.519Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T01:23:11.519Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683516dc9a22a51e2ea8f5a1"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 2,
+      "subtotal": 23220.34
+    }
+  ],
+  "total": 23220.34,
+  "createdAt": {
+    "$date": "2025-05-27T01:35:24.484Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T01:35:24.484Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683516f49a22a51e2ea8f5a7"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 2,
+      "subtotal": 23220.34
+    }
+  ],
+  "total": 23220.34,
+  "createdAt": {
+    "$date": "2025-05-27T01:35:48.552Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T01:35:48.552Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68351754ae0c7f19d91bde90"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 1,
+      "subtotal": 11610.17
+    }
+  ],
+  "total": 11610.17,
+  "createdAt": {
+    "$date": "2025-05-27T01:37:24.993Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T01:37:24.993Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6835176f40e359945667052a"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 1,
+      "subtotal": 11610.17
+    }
+  ],
+  "total": 11610.17,
+  "createdAt": {
+    "$date": "2025-05-27T01:37:51.966Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T01:37:51.966Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6835177040e3599456670530"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 1,
+      "subtotal": 11610.17
+    }
+  ],
+  "total": 11610.17,
+  "createdAt": {
+    "$date": "2025-05-27T01:37:52.822Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T01:37:52.822Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683517e14816e5fbbb7fff32"
+  },
+  "fecha": "26/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 1,
+      "subtotal": 11610.17
+    }
+  ],
+  "total": 11610.17,
+  "createdAt": {
+    "$date": "2025-05-27T01:39:45.105Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T01:39:45.105Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683518204816e5fbbb7fff4c"
+  },
+  "fecha": "26/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 2,
+      "subtotal": 23220.34
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 2,
+      "subtotal": 42218.8
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef77"
+      },
+      "cantidad": 2,
+      "subtotal": 63328.18
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef78"
+      },
+      "cantidad": 2,
+      "subtotal": 105546.98
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef79"
+      },
+      "cantidad": 2,
+      "subtotal": 11979
+    }
+  ],
+  "total": 246293.3,
+  "createdAt": {
+    "$date": "2025-05-27T01:40:48.042Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T01:40:48.042Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6835184a4816e5fbbb7fff54"
+  },
+  "fecha": "26/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 8,
+      "subtotal": 92881.36
+    }
+  ],
+  "total": 92881.36,
+  "createdAt": {
+    "$date": "2025-05-27T01:41:30.949Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-27T01:41:30.949Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68373540652efabf27924b91"
+  },
+  "fecha": "28/05/2025",
+  "id_cliente": "68373533652efabf27924b8a",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 2,
+      "subtotal": 23220.34
+    }
+  ],
+  "total": 23220.34,
+  "createdAt": {
+    "$date": "2025-05-28T16:09:36.747Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-28T16:09:36.747Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837354e652efabf27924ba1"
+  },
+  "fecha": "28/05/2025",
+  "id_cliente": "68373533652efabf27924b8a",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 8,
+      "subtotal": 92881.36
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 1,
+      "subtotal": 21109.4
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef77"
+      },
+      "cantidad": 1,
+      "subtotal": 31664.09
+    }
+  ],
+  "total": 145654.85,
+  "createdAt": {
+    "$date": "2025-05-28T16:09:50.960Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-28T16:09:50.960Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837356f652efabf27924bb5"
+  },
+  "fecha": "28/05/2025",
+  "id_cliente": "68366021db890bbbadedc76e",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 3,
+      "subtotal": 63328.2
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef77"
+      },
+      "cantidad": 3,
+      "subtotal": 94992.27
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef85"
+      },
+      "cantidad": 3,
+      "subtotal": 32587.65
+    }
+  ],
+  "total": 190908.12,
+  "createdAt": {
+    "$date": "2025-05-28T16:10:23.348Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-28T16:10:23.348Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68373725652efabf27924bf0"
+  },
+  "fecha": "28/05/2025",
+  "id_cliente": "6837332ad0b7f4f956b7d6b0",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef77"
+      },
+      "cantidad": 1,
+      "subtotal": 31664.09
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 1,
+      "subtotal": 21109.4
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 1,
+      "subtotal": 11610.17
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef79"
+      },
+      "cantidad": 1,
+      "subtotal": 5989.5
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef83"
+      },
+      "cantidad": 1,
+      "subtotal": 148240.13
+    }
+  ],
+  "total": 218613.29,
+  "createdAt": {
+    "$date": "2025-05-28T16:17:41.989Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-28T16:17:41.989Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837bf88c4c11f847fe87553"
+  },
+  "fecha": "28/05/2025",
+  "id_cliente": "6837332ad0b7f4f956b7d6b0",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 1,
+      "subtotal": 11610.17
+    }
+  ],
+  "total": 11610.17,
+  "createdAt": {
+    "$date": "2025-05-29T01:59:36.127Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T01:59:36.127Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837bfbcc4c11f847fe8755f"
+  },
+  "fecha": "28/05/2025",
+  "id_cliente": "6837332ad0b7f4f956b7d6b0",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 1,
+      "subtotal": 11610.17
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef76"
+      },
+      "cantidad": 1,
+      "subtotal": 21109.4
+    }
+  ],
+  "total": 32719.57,
+  "createdAt": {
+    "$date": "2025-05-29T02:00:28.370Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T02:00:28.370Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837c0d12020a78fb858e823"
+  },
+  "fecha": "28/05/2025",
+  "id_cliente": "68366021db890bbbadedc76e",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 1,
+      "subtotal": 11610.17
+    },
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef77"
+      },
+      "cantidad": 1,
+      "subtotal": 31664.09
+    }
+  ],
+  "total": 43274.26,
+  "createdAt": {
+    "$date": "2025-05-29T02:05:05.790Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T02:05:05.790Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837c0ea2020a78fb858e82f"
+  },
+  "fecha": "28/05/2025",
+  "id_cliente": "6837c0e12020a78fb858e827",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 1,
+      "subtotal": 11610.17
+    }
+  ],
+  "total": 11610.17,
+  "createdAt": {
+    "$date": "2025-05-29T02:05:30.661Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T02:05:30.661Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6837c149c472c4dff19e06d5"
+  },
+  "fecha": "28/05/2025",
+  "id_cliente": "6837332ad0b7f4f956b7d6b0",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 2,
+      "subtotal": 23220.34
+    }
+  ],
+  "total": 23220.34,
+  "createdAt": {
+    "$date": "2025-05-29T02:07:05.621Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T02:07:05.621Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683880a4e39c30f7ba9d65c4"
+  },
+  "fecha": "25/05/2025",
+  "id_cliente": "6833b4044c98cca3844b2693",
+  "productos": [
+    {
+      "id_producto": {
+        "$oid": "6833b8c9ca37eea98ac0ef75"
+      },
+      "cantidad": 2,
+      "subtotal": 23220.34
+    }
+  ],
+  "total": 23220.34,
+  "createdAt": {
+    "$date": "2025-05-29T15:43:32.738Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T15:43:32.738Z"
+  },
+  "__v": 0
+}]
